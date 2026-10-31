@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Check, Compass, HeartHandshake, MessageCircle, Plane, ShieldCheck } from 'lucide-react'
 import { PageHero } from '../components/shared/PageHero'
 import { Reveal } from '../components/shared/Reveal'
+import { ScrollToContent } from '../components/shared/ScrollToContent'
 import { SectionHeader } from '../components/shared/SectionHeader'
 
 const PRINCIPLES = [
@@ -31,9 +32,11 @@ export function AboutPage() {
         description="FlightsFuzz is a flight-booking request platform for travellers from Nepal. It combines a fast search experience with the thing search engines cannot replace: a person who can help with the details."
         image="/images/destinations/kathmandu.jpg"
         imageAlt="Himalayan mountains and a stupa near Kathmandu"
-      />
+      >
+        <ScrollToContent targetId="about-manifesto" label="Scroll to our story" />
+      </PageHero>
 
-      <section className="section about-manifesto">
+      <section className="section about-manifesto" id="about-manifesto">
         <div className="container about-manifesto__grid">
           <Reveal className="about-manifesto__label">
             <span className="micro-label">Our position</span>

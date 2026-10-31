@@ -1,5 +1,5 @@
-import { Link, useLocation } from 'react-router-dom'
-import { MessageCircle } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
+import { FloatingActions } from './FloatingActions'
 import { SiteFooter } from './SiteFooter'
 import { SiteHeader } from './SiteHeader'
 import { ScrollToTop } from './ScrollToTop'
@@ -24,18 +24,7 @@ export function SiteLayout({ children }: { children: React.ReactNode }) {
       <main id="main-content" key={location.pathname} className="page-shell">
         {children}
       </main>
-      {showFloatingContact ? (
-        <Link
-          to="/contact#whatsapp"
-          className="floating-contact"
-          aria-label="WhatsApp contact details"
-          title="WhatsApp contact details"
-        >
-          <span className="floating-contact__pulse" aria-hidden="true" />
-          <MessageCircle size={20} strokeWidth={1.9} />
-          <span className="floating-contact__label">WhatsApp</span>
-        </Link>
-      ) : null}
+      {showFloatingContact ? <FloatingActions /> : null}
       <SiteFooter />
     </div>
   )

@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowDownRight, ArrowRight, BadgeCheck, Headset, MessageCircle, ShieldCheck } from 'lucide-react'
 import { FlightSearchForm } from '../flight-search/FlightSearchForm'
+import { ScrollToContent } from '../shared/ScrollToContent'
 
 const ROUTE_TICKER = [
   'KTM → DXB', 'KTM → DOH', 'KTM → DEL', 'KTM → BKK', 'KTM → KUL',
@@ -116,6 +117,10 @@ export function Hero() {
 
       <div className="container hero__search">
         <FlightSearchForm />
+      </div>
+
+      <div className="container hero__scroll">
+        <ScrollToContent targetId="popular-routes" label="Scroll to explore" />
       </div>
 
       <div className="hero__ticker" aria-hidden="true">

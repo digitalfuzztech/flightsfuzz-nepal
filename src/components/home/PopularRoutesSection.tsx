@@ -5,7 +5,7 @@ import { SectionHeader } from '../shared/SectionHeader'
 
 export function PopularRoutesSection() {
   return (
-    <section className="section home-routes" aria-labelledby="popular-routes-title">
+    <section className="section home-routes" id="popular-routes" aria-labelledby="popular-routes-title">
       <div className="container">
         <SectionHeader
           index="01"

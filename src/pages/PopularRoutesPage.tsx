@@ -5,6 +5,7 @@ import { POPULAR_ROUTES } from '../lib/data/routes'
 import { RouteCard } from '../components/destinations/RouteCard'
 import { PageHero } from '../components/shared/PageHero'
 import { Reveal } from '../components/shared/Reveal'
+import { ScrollToContent } from '../components/shared/ScrollToContent'
 import { cn } from '../lib/utils/format'
 
 const REGIONS = ['All routes', 'Middle East', 'South Asia', 'Southeast Asia', 'East Asia', 'Europe', 'Oceania']
@@ -28,9 +29,10 @@ export function PopularRoutesPage() {
         <div className="page-hero__chips">
           <span>KATHMANDU BASED</span><span>INTERNATIONAL + DOMESTIC</span><span>HUMAN ASSISTANCE</span>
         </div>
+        <ScrollToContent targetId="routes-body" label="Scroll to the routes" />
       </PageHero>
 
-      <section className="section routes-page__body">
+      <section className="section routes-page__body" id="routes-body">
         <div className="container">
           <div className="routes-toolbar">
             <div>

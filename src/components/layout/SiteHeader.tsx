@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import { Logo } from '../brand/Logo'
 import { ThemeToggle } from '../theme/ThemeToggle'
+import { AnnouncementBar } from '../announcements/AnnouncementBar'
 import { useLockBodyScroll } from '../../hooks/useLockBodyScroll'
 import { cn } from '../../lib/utils/format'
 
@@ -10,6 +11,7 @@ const NAV_ITEMS = [
   { label: 'Home', to: '/' },
   { label: 'Flights', to: '/flights' },
   { label: 'Popular Routes', to: '/popular-routes' },
+  { label: 'Notices', to: '/notices' },
   { label: 'About Us', to: '/about' },
   { label: 'Contact', to: '/contact' },
 ]
@@ -43,6 +45,7 @@ export function SiteHeader() {
   return (
     <>
       <header className={cn('site-header', scrolled && 'is-scrolled', open && 'is-open')}>
+        <AnnouncementBar />
         <div className="container site-header__inner">
           <Logo />
           <nav className="site-nav" aria-label="Main navigation">

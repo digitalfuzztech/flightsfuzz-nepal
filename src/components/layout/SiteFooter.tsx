@@ -39,6 +39,7 @@ export function SiteFooter() {
             <Link to="/">Home</Link>
             <Link to="/flights">Flight search</Link>
             <Link to="/popular-routes">Popular routes</Link>
+            <Link to="/notices">Notices &amp; articles</Link>
             <Link to="/about">About FlightsFuzz</Link>
             <Link to="/contact">Contact</Link>
           </div>

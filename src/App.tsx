@@ -12,12 +12,15 @@ import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage'
 import { TermsPage } from './pages/TermsPage'
 import { BookingRequestPage } from './pages/BookingRequestPage'
 import { BookingSuccessPage } from './pages/BookingSuccessPage'
+import { NoticesPage } from './pages/NoticesPage'
+import { ArticlePage } from './pages/ArticlePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 
 const PAGE_TITLES: Record<string, string> = {
   '/': 'FlightsFuzz — Flight Booking Requests from Nepal',
   '/flights': 'Flight Results — FlightsFuzz',
   '/popular-routes': 'Popular Routes — FlightsFuzz',
+  '/notices': 'Notices & Articles — FlightsFuzz',
   '/about': 'About FlightsFuzz',
   '/contact': 'Contact — FlightsFuzz',
   '/privacy-policy': 'Privacy Policy — FlightsFuzz',
@@ -30,7 +33,8 @@ function RouteEffects() {
   const location = useLocation()
 
   useEffect(() => {
-    document.title = PAGE_TITLES[location.pathname] ?? 'Page Not Found — FlightsFuzz'
+    const articleTitle = location.pathname.startsWith('/notices/') ? 'Notice — FlightsFuzz' : undefined
+    document.title = PAGE_TITLES[location.pathname] ?? articleTitle ?? 'Page Not Found — FlightsFuzz'
   }, [location.pathname])
 
   return null
@@ -44,6 +48,8 @@ function AppRoutes() {
         <Route path="/" element={<HomePage />} />
         <Route path="/flights" element={<FlightsPage />} />
         <Route path="/popular-routes" element={<PopularRoutesPage />} />
+        <Route path="/notices" element={<NoticesPage />} />
+        <Route path="/notices/:slug" element={<ArticlePage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />

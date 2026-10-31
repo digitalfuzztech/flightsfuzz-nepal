@@ -21,6 +21,7 @@ import {
   type ResultFilters,
 } from '../components/flight-results/ResultsFilters'
 import { SearchSummary } from '../components/flight-results/SearchSummary'
+import { ScrollToContent } from '../components/shared/ScrollToContent'
 import { useLockBodyScroll } from '../hooks/useLockBodyScroll'
 import { generateDemoFlights } from '../lib/data/mockFlights'
 import { CABIN_LABELS } from '../lib/data/airlines'
@@ -136,6 +137,7 @@ export function FlightsPage() {
             <span><CalendarDays size={15} /> {formatDate(first.date, true)}{search.returnDate ? ` → ${formatDate(search.returnDate)}` : ''}</span>
             <span><MapPin size={15} /> {travellers} traveller{travellers > 1 ? 's' : ''} · {CABIN_LABELS[search.cabin]}</span>
           </div>
+          <ScrollToContent targetId="results-content" label="Scroll to results" />
         </div>
       </header>
 
@@ -150,7 +152,7 @@ export function FlightsPage() {
         </div>
       </div>
 
-      <section className="results-content">
+      <section className="results-content" id="results-content">
         <div className="container">
           <SearchSummary search={search} onEdit={() => setEditing((current) => !current)} />
 
@@ -258,7 +260,7 @@ export function FlightsPage() {
 
                 <div className="flight-list" aria-live="polite">
                   {filtered.map((flight) => (
-                    <FlightCard key={flight.id} flight={flight} search={search} />
+                    <FlightCard key={`${sort}-${flight.id}`} flight={flight} search={search} />
                   ))}
                 </div>
 

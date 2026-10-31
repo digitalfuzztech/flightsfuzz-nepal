@@ -12,6 +12,7 @@ import {
 } from 'lucide-react'
 import { PageHero } from '../components/shared/PageHero'
 import { Reveal } from '../components/shared/Reveal'
+import { ScrollToContent } from '../components/shared/ScrollToContent'
 import { TextAreaField, TextField } from '../components/forms/FormField'
 
 interface MessageDraft {
@@ -68,9 +69,10 @@ export function ContactPage() {
         <div className="page-hero__chips">
           <span>KATHMANDU BASED</span><span>HUMAN SUPPORT</span><span>CHANNELS COMING SOON</span>
         </div>
+        <ScrollToContent targetId="contact-body" label="Scroll to contact options" />
       </PageHero>
 
-      <section className="section contact-body">
+      <section className="section contact-body" id="contact-body">
         <div className="container contact-grid">
           <Reveal className="contact-info">
             <p className="section-kicker"><span>01</span> Official channels</p>

@@ -267,6 +267,8 @@
   position: fixed;
   inset: 0 0 auto;
   z-index: var(--z-header);
+  display: flex;
+  flex-direction: column;
   height: var(--header-height);
   background: color-mix(in srgb, var(--bg) 87%, transparent);
   border-bottom: 1px solid transparent;
@@ -293,7 +295,8 @@
   display: flex;
   align-items: center;
   gap: clamp(20px, 3vw, 44px);
-  height: 100%;
+  height: var(--nav-height);
+  flex: none;
 }
 
 .site-nav {

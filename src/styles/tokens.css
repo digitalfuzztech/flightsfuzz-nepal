@@ -41,7 +41,9 @@
 
   --container: 1280px;
   --gutter: clamp(18px, 4vw, 48px);
-  --header-height: 78px;
+  --nav-height: 78px;
+  --announcement-height: 38px;
+  --header-height: calc(var(--nav-height) + var(--announcement-height));
 
   --radius-xs: 6px;
   --radius-sm: 10px;

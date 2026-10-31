@@ -11,4 +11,8 @@
 @import './styles/results.css';
 @import './styles/booking.css';
 @import './styles/pages.css';
+@import './styles/notices.css';
+@import './styles/announcement.css';
+@import './styles/chatbot.css';
+@import './styles/motion.css';
 @import './styles/responsive.css';

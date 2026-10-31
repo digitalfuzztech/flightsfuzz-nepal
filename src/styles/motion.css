@@ -1,0 +1,521 @@
+/* ==========================================================================
+   Motion layer — scroll cues, entrance choreography and interaction polish
+   All motion is transform/opacity based and disabled by reduced-motion rules.
+   ========================================================================== */
+
+/* Scroll cue --------------------------------------------------------------- */
+
+[data-scroll-target='true']:focus {
+  outline: none;
+}
+
+.hero__scroll {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.scroll-cue {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  border: 0;
+  background: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 0.6rem;
+  font-weight: 650;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.scroll-cue--light {
+  color: rgba(248, 246, 242, 0.5);
+}
+
+.scroll-cue--light:hover,
+.scroll-cue--light:focus-visible {
+  color: var(--on-dark);
+}
+
+.scroll-cue--dark:hover,
+.scroll-cue--dark:focus-visible {
+  color: var(--ink);
+}
+
+.scroll-cue__line {
+  position: relative;
+  width: 48px;
+  height: 1px;
+  overflow: hidden;
+  background: currentColor;
+  opacity: 0.4;
+}
+
+.scroll-cue__line span {
+  position: absolute;
+  inset: 0;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-out);
+}
+
+.scroll-cue:hover .scroll-cue__line span,
+.scroll-cue:focus-visible .scroll-cue__line span {
+  transform: scaleX(1);
+}
+
+.scroll-cue__icon {
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  animation: scroll-bob 2.8s ease-in-out infinite;
+  transition:
+    border-color 0.25s ease,
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.scroll-cue:hover .scroll-cue__icon,
+.scroll-cue:focus-visible .scroll-cue__icon {
+  border-color: var(--red);
+  background: var(--red);
+  color: #fff;
+}
+
+@keyframes scroll-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+.page-hero .scroll-cue,
+.notices-hero .scroll-cue,
+.article-hero .scroll-cue,
+.results-hero .scroll-cue {
+  margin-top: 24px;
+}
+
+.results-hero .scroll-cue {
+  margin-top: 16px;
+}
+
+/* Homepage hero choreography ---------------------------------------------- */
+
+.hero__eyebrow {
+  animation: rise-in 0.7s var(--ease-out) 0.04s both;
+}
+
+.hero__title > span {
+  animation: hero-line-reveal 0.95s var(--ease-out) both;
+  clip-path: inset(0 0 110% 0);
+}
+
+.hero__title > span:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.hero__title > span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hero__title > span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.hero__title > span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+@keyframes hero-line-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    clip-path: inset(0 0 110% 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    clip-path: inset(-18% 0 -18% 0);
+  }
+}
+
+.hero__lead {
+  animation: rise-in 0.8s var(--ease-out) 0.4s both;
+}
+
+.hero__actions {
+  animation: rise-in 0.8s var(--ease-out) 0.5s both;
+}
+
+.hero__points {
+  animation: rise-in 0.8s var(--ease-out) 0.58s both;
+}
+
+.hero__search {
+  animation: hero-search-in 1s var(--ease-out) 0.42s both;
+}
+
+.hero__scroll {
+  animation: rise-in 0.8s var(--ease-out) 0.7s both;
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hero-search-in {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.hero__code-chip {
+  animation: chip-in 0.65s var(--ease-out) both;
+}
+
+.hero__code-chip--origin {
+  animation-delay: 0.9s;
+}
+
+.hero__code-chip--destination {
+  animation-delay: 1.05s;
+}
+
+@keyframes chip-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.boarding-slip {
+  animation: slip-in 0.9s var(--ease-out) 0.95s both;
+}
+
+@keyframes slip-in {
+  from {
+    opacity: 0;
+    transform: translate(16px, 18px) rotate(3deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Page hero media ---------------------------------------------------------- */
+
+.page-hero__media img {
+  animation: page-media-in 1.15s var(--ease-out) 0.12s both;
+}
+
+@keyframes page-media-in {
+  from {
+    opacity: 0.35;
+    transform: scale(1.06);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Search interaction ------------------------------------------------------- */
+
+.search-field {
+  transition: background-color 0.25s ease;
+}
+
+.search-field:focus-within {
+  background: var(--surface-2);
+}
+
+.search-field__label {
+  transition: color 0.2s ease;
+}
+
+.search-field:focus-within .search-field__label {
+  color: var(--red);
+}
+
+.search-submit {
+  position: relative;
+  overflow: hidden;
+}
+
+.search-submit::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 20%, rgba(255, 255, 255, 0.22) 48%, transparent 72%);
+  transform: translateX(-120%);
+  transition: transform 0.65s var(--ease-out);
+  pointer-events: none;
+}
+
+.search-submit:hover::after {
+  transform: translateX(120%);
+}
+
+/* Cards ------------------------------------------------------------------- */
+
+.route-card {
+  transition:
+    transform 0.35s var(--ease-out),
+    box-shadow 0.35s ease;
+}
+
+.route-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.destination-card {
+  transition:
+    transform 0.4s var(--ease-out),
+    box-shadow 0.4s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.why-card {
+  transition:
+    transform 0.35s var(--ease-out),
+    border-color 0.3s ease,
+    box-shadow 0.35s ease;
+}
+
+.why-card:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+.notice-card {
+  transform: translateY(0);
+}
+
+/* Article / section image clip reveal (applied to existing Reveal wrappers) */
+
+.reveal .notices-featured__media {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.95s var(--ease-out) 0.08s;
+}
+
+.reveal.is-visible .notices-featured__media {
+  clip-path: inset(0);
+}
+
+.reveal .destination-card img,
+.reveal .route-card__image {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 0.9s var(--ease-out);
+}
+
+.reveal.is-visible .destination-card img,
+.reveal.is-visible .route-card__image {
+  clip-path: inset(0);
+}
+
+/* Results ----------------------------------------------------------------- */
+
+.flight-list > * {
+  animation: flight-in 0.5s var(--ease-out) both;
+}
+
+.flight-list > *:nth-child(1) { animation-delay: 0.02s; }
+.flight-list > *:nth-child(2) { animation-delay: 0.07s; }
+.flight-list > *:nth-child(3) { animation-delay: 0.12s; }
+.flight-list > *:nth-child(4) { animation-delay: 0.17s; }
+.flight-list > *:nth-child(5) { animation-delay: 0.22s; }
+.flight-list > *:nth-child(6) { animation-delay: 0.27s; }
+.flight-list > *:nth-child(7) { animation-delay: 0.32s; }
+.flight-list > *:nth-child(8) { animation-delay: 0.37s; }
+.flight-list > *:nth-child(n + 9) { animation-delay: 0.4s; }
+
+@keyframes flight-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.results-hero__plane {
+  animation: results-plane-in 1.4s var(--ease-out) 0.1s both;
+}
+
+@keyframes results-plane-in {
+  from {
+    opacity: 0;
+    transform: translate(4%, 5%) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.filter-drawer__panel {
+  will-change: transform;
+}
+
+/* Booking ---------------------------------------------------------------- */
+
+.booking-step {
+  animation: step-in-refined 0.32s var(--ease-out);
+}
+
+@keyframes step-in-refined {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.passenger-card {
+  animation: passenger-in 0.4s var(--ease-out) both;
+}
+
+.passenger-card:nth-child(2) { animation-delay: 0.06s; }
+.passenger-card:nth-child(3) { animation-delay: 0.12s; }
+.passenger-card:nth-child(4) { animation-delay: 0.18s; }
+.passenger-card:nth-child(5) { animation-delay: 0.24s; }
+.passenger-card:nth-child(n + 6) { animation-delay: 0.3s; }
+
+@keyframes passenger-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.upload-item {
+  animation: upload-in 0.35s var(--ease-out) both;
+}
+
+@keyframes upload-in {
+  from {
+    opacity: 0;
+    transform: translateX(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.upload-item__progress span {
+  transition: width 0.35s var(--ease-out);
+}
+
+/* Progressive scroll-linked detail (no layout impact, Chrome/Edge) --------- */
+
+@supports (animation-timeline: view()) {
+  .how-journey__line {
+    transform-origin: left center;
+    animation: line-grow linear both;
+    animation-timeline: view();
+    animation-range: entry 8% cover 34%;
+  }
+
+  @keyframes line-grow {
+    from {
+      transform: scaleX(0.12);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+}
+
+/* Reduced motion ----------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue__icon,
+  .chatbot-launcher__glow,
+  .chatbot-launcher__dot,
+  .announcement-bar__accent,
+  .announcement-bar__ping {
+    animation: none !important;
+  }
+
+  .hero__eyebrow,
+  .hero__title > span,
+  .hero__lead,
+  .hero__actions,
+  .hero__points,
+  .hero__search,
+  .hero__scroll,
+  .hero__code-chip,
+  .boarding-slip,
+  .page-hero__media img,
+  .results-hero__plane,
+  .notice-card,
+  .flight-list > *,
+  .passenger-card,
+  .upload-item,
+  .booking-step {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+
+  .reveal .notices-featured__media,
+  .reveal .destination-card img,
+  .reveal .route-card__image {
+    clip-path: none !important;
+    transition: none !important;
+  }
+
+  .how-journey__line {
+    animation: none !important;
+  }
+
+  .route-card:hover,
+  .destination-card:hover {
+    transform: none;
+  }
+}
