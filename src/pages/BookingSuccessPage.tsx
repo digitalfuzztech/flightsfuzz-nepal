@@ -99,7 +99,7 @@ export function BookingSuccessPage() {
                   <h2>Captured locally — not transmitted.</h2>
                   <p>
                     The form passed browser validation and produced this confirmation screen. A
-                    backend booking-request API is not connected, so FlightsFuzz has not actually
+                    backend booking-request API is not connected, so Flash Flights has not actually
                     received this lead.
                   </p>
                 </div>

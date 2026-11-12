@@ -422,7 +422,7 @@
 
 .filter-check input:checked + .filter-check__box {
   border-color: var(--red);
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
 }
 
@@ -572,7 +572,7 @@
 
 .flight-card__main {
   display: grid;
-  grid-template-columns: 195px minmax(0, 1fr) 185px;
+  grid-template-columns: 195px minmax(0, 1fr) minmax(200px, 220px);
   gap: 18px;
   align-items: center;
   padding: 17px 18px 14px;
@@ -708,7 +708,7 @@
   height: 4px;
   margin: 0 2px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
 }
 
 .flight-path__line svg {

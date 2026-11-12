@@ -118,7 +118,7 @@ export function FlightCard({ flight, search }: FlightCardProps) {
             <p>{CABIN_LABELS[flight.cabin]} · demonstration fare</p>
             <p className="flight-card__disclaimer">
               This card is generated from mock data. Price and availability are not verified and
-              cannot be booked online. A FlightsFuzz team member will confirm live options.
+              cannot be booked online. A Flash Flights team member will confirm live options.
             </p>
           </div>
         </div>

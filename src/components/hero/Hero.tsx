@@ -97,7 +97,7 @@ export function Hero() {
 
           <div className="boarding-slip" aria-hidden="true">
             <div className="boarding-slip__top">
-              <span>FLIGHTSFUZZ</span>
+              <span>FLASH FLIGHTS</span>
               <span>DEMO PASS</span>
             </div>
             <div className="boarding-slip__route">

@@ -17,9 +17,9 @@ export function WhySection() {
       <div className="container">
         <SectionHeader
           index="02"
-          eyebrow="Why FlightsFuzz"
+          eyebrow="Why Flash Flights"
           title={<span id="why-title">BOOKING A FLIGHT<br />SHOULD FEEL HUMAN.</span>}
-          description="A flight search is only the beginning. FlightsFuzz is built around the conversation that follows: checking options, explaining the rules and helping you make a confident decision."
+          description="A flight search is only the beginning. Flash Flights is built around the conversation that follows: checking options, explaining the rules and helping you make a confident decision."
           light
         />
 
@@ -56,7 +56,7 @@ export function WhySection() {
             <p>Talk through the details on the channel you choose. Email and WhatsApp consent are separate decisions.</p>
             <div className="chat-illustration" aria-hidden="true">
               <div className="chat-illustration__bubble chat-illustration__bubble--in">
-                <span>FLIGHTSFUZZ TEAM</span>
+                <span>FLASH FLIGHTS TEAM</span>
                 <strong>We’re reviewing your request.</strong>
                 <small>Illustration · no message has been sent</small>
               </div>

@@ -22,7 +22,7 @@ export function TermsPage() {
       <PageHero
         eyebrow="Terms & conditions · demonstration"
         title={<>CLEAR TERMS.<br />NO <span className="text-red">SMALL PRINT.</span></>}
-        description="These terms describe the limits of the current FlightsFuzz frontend demonstration. They are not the terms of a live travel agency or a completed booking service."
+        description="These terms describe the limits of the current Flash Flights frontend demonstration. They are not the terms of a live travel agency or a completed booking service."
         compact
       >
         <div className="legal-meta">
@@ -74,7 +74,7 @@ export function TermsPage() {
               <p>
                 These terms apply to the frontend prototype in this repository. They do not create a
                 customer relationship with an airline, a travel agency, a payment provider or any
-                future FlightsFuzz production entity.
+                future Flash Flights production entity.
               </p>
             </Reveal>
 
@@ -82,7 +82,7 @@ export function TermsPage() {
               <span className="legal-section__number">02</span>
               <h2>What this service is</h2>
               <p>
-                FlightsFuzz is presented as a flight booking request platform for travellers from
+                Flash Flights is presented as a flight booking request platform for travellers from
                 Nepal. The interface lets you search routes, review demonstration flight options and
                 prepare a structured request with contact, passenger, document and communication
                 information.
@@ -112,7 +112,7 @@ export function TermsPage() {
               <div className="legal-inline-warning">
                 <ShieldCheck size={17} />
                 <p>
-                  Real availability, pricing and fare conditions must be confirmed by the FlightsFuzz
+                  Real availability, pricing and fare conditions must be confirmed by the Flash Flights
                   team with a live flight-data provider before any booking decision.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export function TermsPage() {
               <h2>Booking requests</h2>
               <p>
                 Submitting the form creates a local demonstration confirmation in your browser. It
-                does not send the request to FlightsFuzz, does not create a lead in a database and
+                does not send the request to Flash Flights, does not create a lead in a database and
                 does not reserve a seat. The reference shown is generated locally and cannot be
                 looked up later.
               </p>
@@ -173,7 +173,7 @@ export function TermsPage() {
               <p>
                 This website does not collect payment, card details, bank details or wallet
                 credentials. It does not issue tickets, hold seats or confirm fares. Any request to
-                send money to an account presented as FlightsFuzz should be treated as suspicious
+                send money to an account presented as Flash Flights should be treated as suspicious
                 until official channels are independently verified.
               </p>
               <p>
@@ -205,7 +205,7 @@ export function TermsPage() {
                 accuracy, completeness, fitness for a particular purpose or uninterrupted access.
               </p>
               <p>
-                To the extent permitted by applicable law, FlightsFuzz is not liable for losses
+                To the extent permitted by applicable law, Flash Flights is not liable for losses
                 arising from reliance on demonstration data, from the inability to use this
                 prototype, or from any booking, payment or travel decision made outside a verified
                 production channel. Nothing in these terms excludes liability that cannot lawfully

@@ -60,7 +60,7 @@ export function ContactPage() {
   return (
     <div className="contact-page">
       <PageHero
-        eyebrow="Contact · FlightsFuzz"
+        eyebrow="Contact · Flash Flights"
         title={<>LET’S TALK<br />ABOUT YOUR <span className="text-red">TRIP.</span></>}
         description="Questions about a route, a passenger detail or the booking-request workflow? Start here. Official contact channels are being prepared and will be published on this page."
         image="/images/destinations/airport.jpg"
@@ -106,7 +106,7 @@ export function ContactPage() {
                     <span className="badge badge--outline">To be published</span>
                   </div>
                   <p>
-                    A verified FlightsFuzz email address is not connected. The form on this page
+                    A verified Flash Flights email address is not connected. The form on this page
                     prepares a local draft; it does not send an email.
                   </p>
                   <span className="contact-channel__placeholder">official@ — pending</span>
@@ -121,7 +121,7 @@ export function ContactPage() {
                     <span className="badge badge--outline">Nepal</span>
                   </div>
                   <p>
-                    FlightsFuzz is a Nepal-focused flight booking desk. A physical office address
+                    Flash Flights is a Nepal-focused flight booking desk. A physical office address
                     will only be published once it can be verified.
                   </p>
                   <span className="contact-channel__placeholder">Kathmandu · Nepal</span>
@@ -217,7 +217,7 @@ export function ContactPage() {
                     <strong>Your draft is ready in this browser.</strong>
                     <p>
                       It has not been sent. Email and WhatsApp delivery are pending integrations, so
-                      no one at FlightsFuzz has received this message. Use the booking request flow
+                      no one at Flash Flights has received this message. Use the booking request flow
                       to prepare travel details while contact channels are being connected.
                     </p>
                     <Link to="/booking-request" className="text-link">

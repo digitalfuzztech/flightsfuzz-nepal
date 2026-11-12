@@ -11,7 +11,7 @@ type ChatState = 'closed' | 'open' | 'minimized'
 const WELCOME: ChatMessageModel = {
   id: 'welcome',
   role: 'assistant',
-  text: 'Hi — I’m the FlightsFuzz assistant. Ask me how the booking-request process works, what documents you may need, or where to find notices and human support.',
+  text: 'Hi — I’m the Flash Flights assistant. Ask me how the booking-request process works, what documents you may need, or where to find notices and human support.',
   createdAt: Date.now(),
   actions: [
     { label: 'Search Flights', to: '/flights' },
@@ -104,7 +104,7 @@ export function ChatbotWidget() {
       />
 
       {state === 'minimized' ? (
-        <button type="button" className="chatbot-resume" onClick={open} aria-label="Resume the FlightsFuzz assistant">
+        <button type="button" className="chatbot-resume" onClick={open} aria-label="Resume the Flash Flights assistant">
           <span className="chatbot-resume__icon" aria-hidden="true">
             <Sparkles size={15} />
           </span>

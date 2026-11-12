@@ -3,6 +3,7 @@ import { ArrowUpRight, Plane } from 'lucide-react'
 import type { PopularRoute } from '../../lib/data/routes'
 import { buildSearchUrl, createRouteSearch } from '../../lib/utils/search'
 import { cn } from '../../lib/utils/format'
+import { SmartImage } from '../shared/SmartImage'
 
 export function RouteCard({ route }: { route: PopularRoute }) {
   return (
@@ -11,7 +12,13 @@ export function RouteCard({ route }: { route: PopularRoute }) {
       className={cn('route-card', route.featured && 'route-card--featured')}
       aria-label={`Search flights from Kathmandu to ${route.city}`}
     >
-      <img src={route.image} alt={`${route.city}, ${route.country}`} loading="lazy" className="route-card__image" />
+      <SmartImage
+        src={route.image}
+        alt={`${route.city}, ${route.country}`}
+        loading="lazy"
+        wrapperClassName="smart-image--fill route-card__media"
+        imgClassName="route-card__image"
+      />
       <span className="route-card__shade" aria-hidden="true" />
       <span className="route-card__top">
         <span className="route-card__code">KTM</span>

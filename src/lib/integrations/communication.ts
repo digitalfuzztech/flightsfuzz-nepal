@@ -41,6 +41,6 @@ export const FUTURE_COMMUNICATION_FLOW = [
   'Backend stores the lead and passenger details.',
   'Transactional email sends an acknowledgement to the provided address.',
   'WhatsApp Business API sends an approved acknowledgement, subject to consent.',
-  'A FlightsFuzz team member takes over the conversation.',
+  'A Flash Flights team member takes over the conversation.',
   'Flight options, quotation, payment and final booking are handled by the team.',
 ] as const

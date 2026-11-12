@@ -1,0 +1,858 @@
+/* ==========================================================================
+   Readability layer — shared type scale for content, controls and chrome.
+   Loaded after the feature styles so component-level sizes are superseded.
+   ========================================================================== */
+
+body {
+  font-size: var(--font-body-size);
+  line-height: 1.65;
+}
+
+/* Shared utilities -------------------------------------------------------- */
+
+.micro-label {
+  font-size: var(--font-meta);
+  letter-spacing: 0.12em;
+}
+
+.eyebrow,
+.section-kicker {
+  font-size: 0.875rem;
+  letter-spacing: 0.13em;
+}
+
+.section-kicker span {
+  font-size: 0.8125rem;
+}
+
+.section-header__aside > p {
+  font-size: var(--font-body-size);
+  line-height: 1.72;
+}
+
+.text-link {
+  font-size: var(--font-body-size);
+}
+
+.text-button {
+  font-size: var(--font-body-sm);
+}
+
+.btn {
+  font-size: var(--font-button);
+  min-height: 48px;
+  padding: 0.78rem 1.45rem;
+}
+
+.btn--sm {
+  font-size: 0.9375rem;
+  min-height: 43px;
+}
+
+.btn--lg {
+  font-size: 1.0625rem;
+}
+
+.badge,
+.form-error-banner,
+.skip-link,
+.legal-meta,
+.page-hero__chips span {
+  font-size: var(--font-meta);
+}
+
+/* Header and navigation --------------------------------------------------- */
+
+.site-nav__link {
+  font-size: var(--font-nav);
+  letter-spacing: 0.075em;
+}
+
+.site-header__cta {
+  font-size: var(--font-button);
+}
+
+.site-footer__brand p {
+  font-size: var(--font-body-size);
+  line-height: 1.7;
+}
+
+.site-footer__col h3 {
+  font-size: 0.8125rem;
+}
+
+.site-footer__col > a {
+  font-size: var(--font-footer);
+}
+
+.site-footer__placeholder {
+  font-size: 0.8125rem;
+}
+
+.site-footer__placeholder span {
+  font-size: var(--font-footer);
+}
+
+.site-footer__middle,
+.site-footer__bottom,
+.site-footer__small,
+.site-footer__social-note,
+.site-footer__demo {
+  font-size: var(--font-meta);
+}
+
+.floating-contact__label {
+  font-size: 0.9375rem;
+}
+
+.preloader__label {
+  font-size: 0.875rem;
+}
+
+.preloader__note {
+  font-size: 0.9375rem;
+}
+
+/* Hero and page heroes ---------------------------------------------------- */
+
+.hero__lead,
+.page-hero__lead,
+.booking-hero__lead,
+.booking-hero--compact .container > p:last-child {
+  font-size: var(--font-body-size);
+  line-height: 1.75;
+}
+
+.hero__points li {
+  font-size: var(--font-body-sm);
+}
+
+.scroll-cue__text {
+  font-size: var(--font-meta);
+}
+
+/* Home content ------------------------------------------------------------ */
+
+.route-card__region {
+  font-size: var(--font-meta);
+}
+
+.route-card__country {
+  font-size: var(--font-body-sm);
+}
+
+.route-card__blurb {
+  font-size: var(--font-card);
+  line-height: 1.6;
+}
+
+.route-card__cta {
+  font-size: 0.9375rem;
+}
+
+.destination-card__meta {
+  font-size: var(--font-meta);
+}
+
+.destination-card__code {
+  font-size: var(--font-meta);
+}
+
+.destination-card__bottom small {
+  font-size: var(--font-card);
+  line-height: 1.55;
+}
+
+.why-card p,
+.how-step p,
+.how-section__foot p,
+.trust-item p,
+.faq-contact p,
+.accordion__panel p {
+  font-size: var(--font-body-size);
+  line-height: 1.72;
+}
+
+.trust-list__note p {
+  font-size: var(--font-body-sm);
+}
+
+.accordion__question {
+  font-size: 1.0625rem;
+}
+
+.final-cta__lead {
+  font-size: var(--font-body-size);
+}
+
+.final-cta__note,
+.final-cta__strip {
+  font-size: var(--font-meta);
+}
+
+/* Search controls --------------------------------------------------------- */
+
+.trip-tab {
+  font-size: 0.9375rem;
+}
+
+.flight-search__demo {
+  font-size: var(--font-meta);
+}
+
+.search-field__label {
+  font-size: var(--font-label);
+  letter-spacing: 0.1em;
+}
+
+.search-field__input {
+  font-size: 1.0625rem;
+}
+
+.search-field__code {
+  font-size: 0.8125rem;
+}
+
+.date-field__value,
+.travellers-field__text > span:first-child {
+  font-size: 1rem;
+}
+
+.date-field__weekday,
+.travellers-field__sub {
+  font-size: var(--font-meta);
+}
+
+.search-submit {
+  font-size: var(--font-button);
+}
+
+.airport-option__code {
+  font-size: 0.8125rem;
+}
+
+.airport-option__body strong {
+  font-size: 0.9375rem;
+}
+
+.airport-option__body span,
+.airport-popover__empty p,
+.travellers-popover__head > span:last-child {
+  font-size: var(--font-meta);
+}
+
+.airport-option__country {
+  font-size: 0.8125rem;
+}
+
+.counter-row__body strong {
+  font-size: 0.9375rem;
+}
+
+.counter-row__body span {
+  font-size: 0.8125rem;
+}
+
+.counter > span,
+.cabin-option {
+  font-size: 0.875rem;
+}
+
+.flight-search__foot-mark {
+  font-size: var(--font-meta);
+}
+
+/* Results and flight cards ------------------------------------------------ */
+
+.results-hero__meta,
+.search-summary__cities {
+  font-size: var(--font-meta);
+}
+
+.search-summary__new,
+.data-notice,
+.results-toolbar__sub,
+.filter-help {
+  font-size: var(--font-meta);
+}
+
+.results-toolbar__count {
+  font-size: 1rem;
+}
+
+.filter-group legend {
+  font-size: 0.875rem;
+}
+
+.filter-chip,
+.filter-check__label {
+  font-size: 1rem;
+}
+
+.filter-check__count {
+  font-size: 0.8125rem;
+}
+
+.sort-control select {
+  font-size: 0.9375rem;
+}
+
+.flight-card__airline strong {
+  font-size: 1rem;
+}
+
+.flight-card__airline span:last-child,
+.flight-time > span,
+.flight-time small,
+.flight-path__duration,
+.flight-path__stops {
+  font-size: var(--font-meta);
+}
+
+.flight-card__fare-label {
+  font-size: var(--font-meta);
+}
+
+.flight-card__fare > span:not(.flight-card__fare-label) {
+  font-size: var(--font-meta);
+}
+
+.flight-card__details-toggle {
+  font-size: 1rem;
+}
+
+.flight-card__meta > span {
+  font-size: var(--font-meta);
+}
+
+/* Booking flow ------------------------------------------------------------ */
+
+.booking-stepper__number {
+  font-size: 0.75rem;
+}
+
+.booking-stepper__label {
+  font-size: 0.875rem;
+}
+
+.booking-stepper__note {
+  font-size: 0.8125rem;
+}
+
+.step-intro {
+  font-size: var(--font-body-size);
+  line-height: 1.72;
+}
+
+.form-section-label {
+  font-size: 0.875rem;
+}
+
+.form-field > label,
+.form-field > span:first-child {
+  font-size: var(--font-label);
+}
+
+.form-input {
+  font-size: 1.0625rem;
+  min-height: 50px;
+}
+
+.form-hint {
+  font-size: var(--font-meta);
+}
+
+.field-error {
+  font-size: 0.875rem;
+}
+
+.optional-note,
+.inline-check {
+  font-size: var(--font-meta);
+}
+
+.phone-group__code {
+  font-size: 1rem;
+}
+
+.passenger-card__identity > span,
+.passenger-card__hint {
+  font-size: var(--font-meta);
+}
+
+.passenger-card__type select {
+  font-size: 0.9375rem;
+}
+
+.document-type {
+  font-size: 0.9375rem;
+}
+
+.document-type__tag,
+.document-type__count,
+.document-total,
+.document-passenger__head span {
+  font-size: var(--font-meta);
+}
+
+.document-uploader__notice p,
+.upload-item__meta {
+  font-size: var(--font-meta);
+}
+
+.upload-item__name {
+  font-size: 0.9375rem;
+}
+
+.consent-card__channel {
+  font-size: 1rem;
+}
+
+.consent-card__text {
+  font-size: var(--font-body-sm);
+  line-height: 1.62;
+}
+
+.consent-card__links,
+.consent-footnote,
+.privacy-inline {
+  font-size: var(--font-meta);
+  line-height: 1.55;
+}
+
+.booking-summary__route span,
+.booking-summary__details dt,
+.booking-summary__legs small,
+.booking-summary__note,
+.booking-summary__flight-head em {
+  font-size: var(--font-meta);
+}
+
+.booking-summary__details dd,
+.booking-summary__legs li > span,
+.booking-summary__flight-times span,
+.booking-summary__flight-foot strong,
+.selected-flight__airline span,
+.selected-flight__times span,
+.selected-flight__fare span {
+  font-size: var(--font-body-sm);
+}
+
+.booking-summary__legs strong,
+.booking-summary__flight-times,
+.selected-flight__airline strong,
+.selected-flight__times strong {
+  font-size: 1rem;
+}
+
+/* Booking content readability -------------------------------------------- */
+
+.booking-stepper__head,
+.booking-stepper__number,
+.booking-summary__status,
+.booking-form__step,
+.booking-review__meta span,
+.passenger-card__index,
+.document-passenger__index,
+.document-type__tag,
+.document-type__count,
+.upload-item__status,
+.review-block__head h3 span,
+.review-passenger__index,
+.review-flight-line .airline-mark {
+  font-size: 0.75rem;
+}
+
+.booking-stepper__note,
+.itinerary__path,
+.review-grid span,
+.review-legs li,
+.review-flight-line,
+.booking-form__nav-note {
+  font-size: 0.8125rem;
+}
+
+.booking-summary__line small,
+.booking-summary__flight-times span,
+.booking-summary__flight-foot,
+.booking-summary__flight-head em,
+.selected-flight__times span,
+.selected-flight__line,
+.booking-summary__legs li,
+.document-type__count,
+.dropzone__copy small,
+.upload-item__status,
+.review-documents__count {
+  font-size: 0.8125rem;
+}
+
+.booking-summary__route span,
+.booking-summary__details > div,
+.booking-summary__details dt,
+.booking-summary__legs strong,
+.booking-summary__flight-head,
+.booking-summary__flight-times,
+.booking-summary__flight--none p,
+.booking-summary__note,
+.itinerary__airport span,
+.itinerary__return,
+.selected-flight__airline span,
+.selected-flight__fare span,
+.selected-flight__note,
+.booking-tip p,
+.booking-help strong,
+.passenger-card__identity > span,
+.passenger-card__hint,
+.add-passenger small,
+.document-total,
+.document-passenger__head span,
+.document-uploader__notice p,
+.upload-item__meta,
+.consent-card__links,
+.consent-footnote p,
+.review-edit,
+.review-empty,
+.review-passenger span,
+.review-documents__count,
+.review-documents > div,
+.review-block__note,
+.review-consents span,
+.booking-form__submit-note {
+  font-size: 0.875rem;
+}
+
+.booking-summary__details dd,
+.booking-help p,
+.booking-help .text-link,
+.booking-page .text-link,
+.selected-flight__none p,
+.add-passenger strong,
+.dropzone__copy > span,
+.upload-item__name,
+.consent-intro p,
+.consent-card__text,
+.final-notice p,
+.review-grid strong,
+.review-passenger strong,
+.review-documents > div > strong {
+  font-size: 0.9375rem;
+}
+
+.booking-form__head p {
+  font-size: var(--font-body-size);
+  line-height: 1.72;
+}
+
+.booking-help strong,
+.security-banner strong,
+.document-passenger__head h3,
+.document-type,
+.dropzone__copy strong,
+.consent-intro strong,
+.consent-card__channel,
+.final-notice strong {
+  font-size: 1rem;
+}
+
+.security-banner p {
+  font-size: 0.9375rem;
+}
+
+.review-block__head h3 {
+  font-size: 1.0625rem;
+}
+
+.passenger-card__type select {
+  font-size: 1rem;
+}
+
+.passenger-card h3 {
+  font-size: 1.0625rem;
+}
+
+.booking-summary__flight-head,
+.booking-summary__flight-times {
+  font-size: 1rem;
+}
+
+.review-grid span,
+.booking-form__nav-note,
+.dropzone__copy small {
+  font-size: 0.875rem;
+}
+
+/* Notices and article cards ----------------------------------------------- */
+
+.notices-featured__copy > p,
+.notices-feed__intro p,
+.notices-subscribe__copy p,
+.article-related__aside p {
+  font-size: var(--font-body-size);
+  line-height: 1.72;
+}
+
+.notices-featured__tag,
+.notices-featured__meta,
+.notices-demo-note,
+.notices-feed__count,
+.notices-subscribe__note,
+.notices-subscribe__result p {
+  font-size: var(--font-meta);
+}
+
+.category-chip {
+  font-size: 0.9375rem;
+}
+
+.notice-card__category {
+  font-size: 0.75rem;
+}
+
+.notice-card__meta {
+  font-size: var(--font-meta);
+}
+
+.notice-card__excerpt {
+  font-size: var(--font-card);
+  line-height: 1.62;
+}
+
+.notice-card--wide .notice-card__excerpt,
+.notice-card--text .notice-card__excerpt {
+  font-size: var(--font-card);
+}
+
+.notice-card__cta {
+  font-size: 0.875rem;
+}
+
+.notices-subscribe__form label {
+  font-size: var(--font-label);
+}
+
+.notices-subscribe__row input {
+  font-size: 1.0625rem;
+  height: 50px;
+}
+
+/* Article ---------------------------------------------------------------- */
+
+.article-body__content > p {
+  font-size: var(--font-article);
+  line-height: 1.82;
+}
+
+.article-body__content li {
+  font-size: 1.0625rem;
+  line-height: 1.78;
+}
+
+.article-body__content h2 {
+  font-size: clamp(1.35rem, 1.9vw, 1.65rem);
+}
+
+.article-body__content cite,
+.article-body__tags > span:first-child,
+.article-tag,
+.article-body__share p,
+.article-body__disclaimer p,
+.article-side-card p {
+  font-size: var(--font-meta);
+}
+
+.article-back,
+.article-hero__category,
+.article-hero__meta,
+.article-hero__share-note,
+.article-hero__updated {
+  font-size: var(--font-meta);
+}
+
+.article-cta p {
+  font-size: var(--font-body-size);
+}
+
+/* About, contact and success ---------------------------------------------- */
+
+.about-manifesto__copy p,
+.principle-card p,
+.about-not__item p,
+.about-process__item p,
+.contact-info__lead,
+.contact-channel p,
+.contact-note p,
+.contact-form-card__head p,
+.contact-step p,
+.contact-form__disclaimer,
+.contact-form__result p,
+.success-page p {
+  font-size: var(--font-body-size);
+  line-height: 1.7;
+}
+
+.contact-next__head p,
+.success-small-links {
+  font-size: var(--font-meta);
+}
+
+.contact-step__number,
+.about-manifesto__index,
+.about-process__number,
+.principle-card__number {
+  font-size: 0.8125rem;
+}
+
+.contact-form-card__head h2,
+.contact-next__head h2 {
+  line-height: 0.9;
+}
+
+/* Booking success --------------------------------------------------------- */
+
+.success-hero__copy > p:last-of-type {
+  font-size: var(--font-body-size);
+  line-height: 1.72;
+}
+
+.success-hero__visual-note,
+.success-summary__note,
+.success-warning p,
+.success-contact-card p,
+.integration-card__note {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.success-reference span,
+.success-summary__grid span,
+.success-timeline li > div span,
+.integration-card li > div span {
+  font-size: 0.875rem;
+}
+
+.success-reference small,
+.success-summary__note,
+.success-timeline__dot {
+  font-size: 0.8125rem;
+}
+
+.success-missing strong,
+.success-summary__grid strong,
+.success-timeline strong,
+.success-warning strong,
+.integration-card strong,
+.success-status p,
+.success-next__head p {
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.success-status h2 {
+  font-size: 1.125rem;
+}
+
+/* Chatbot ---------------------------------------------------------------- */
+
+.chatbot-panel {
+  width: min(420px, calc(100vw - 28px));
+  height: min(680px, calc(100dvh - var(--header-height) - 118px));
+}
+
+.chatbot-panel__identity strong {
+  font-size: 1rem;
+}
+
+.chatbot-panel__identity span {
+  font-size: 0.8125rem;
+}
+
+.chatbot-panel__intro p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.chat-message__text {
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
+.chat-message__time {
+  font-size: 0.8125rem;
+}
+
+.chat-action {
+  font-size: 0.875rem;
+}
+
+.chat-suggestions__label,
+.chatbot-panel__intro-badge {
+  font-size: 0.75rem;
+}
+
+.chat-suggestion {
+  font-size: 0.9375rem;
+}
+
+.chatbot-panel__input-wrap input {
+  font-size: 1rem;
+}
+
+.chatbot-panel__footnote {
+  font-size: 0.8125rem;
+}
+
+.chatbot-launcher__tooltip {
+  font-size: 0.875rem;
+}
+
+.chatbot-resume__copy strong {
+  font-size: 0.9375rem;
+}
+
+.chatbot-resume__copy small {
+  font-size: 0.875rem;
+}
+
+/* Announcement bar -------------------------------------------------------- */
+
+.announcement-bar__copy {
+  font-size: 0.9375rem;
+}
+
+.announcement-bar__label,
+.announcement-bar__cta {
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 820px) {
+  .site-nav__link {
+    font-size: 0.9375rem;
+  }
+
+  .chatbot-panel {
+    height: min(74dvh, 610px);
+  }
+}
+
+@media (max-width: 390px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .announcement-bar__copy {
+    font-size: 0.875rem;
+  }
+
+  .announcement-bar__cta {
+    font-size: 0.75rem;
+  }
+
+  .chat-message__text,
+  .chatbot-panel__input-wrap input {
+    font-size: 0.9375rem;
+  }
+
+  .chat-suggestion {
+    font-size: 0.875rem;
+  }
+}

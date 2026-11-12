@@ -40,7 +40,7 @@ export function SiteFooter() {
             <Link to="/flights">Flight search</Link>
             <Link to="/popular-routes">Popular routes</Link>
             <Link to="/notices">Notices &amp; articles</Link>
-            <Link to="/about">About FlightsFuzz</Link>
+            <Link to="/about">About Flash Flights</Link>
             <Link to="/contact">Contact</Link>
           </div>
 
@@ -87,14 +87,14 @@ export function SiteFooter() {
         </div>
 
         <div className="site-footer__bottom">
-          <p>© {new Date().getFullYear()} FlightsFuzz. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Flash Flights. All rights reserved.</p>
           <div>
             <Link to="/privacy-policy">Privacy Policy</Link>
             <Link to="/terms-and-conditions">Terms &amp; Conditions</Link>
           </div>
         </div>
       </div>
-      <div className="site-footer__wordmark" aria-hidden="true">FLIGHTSFUZZ</div>
+      <div className="site-footer__wordmark" aria-hidden="true">FLASH FLIGHTS</div>
     </footer>
   )
 }

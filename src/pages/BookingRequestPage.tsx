@@ -47,7 +47,7 @@ const STEP_META = [
   { title: 'Who is travelling?', eyebrow: 'Passenger information', description: 'Add each traveller exactly as their name appears on their travel document.' },
   { title: 'Document preview', eyebrow: 'Identity documents', description: 'Attach the documents relevant to each passenger. Files stay in this browser tab only.' },
   { title: 'A little more context', eyebrow: 'Additional information', description: 'Optional details that help the team understand your preferences and constraints.' },
-  { title: 'Your communication choices', eyebrow: 'Consent', description: 'Choose how FlightsFuzz may contact you. Both consents are required for this workflow.' },
+  { title: 'Your communication choices', eyebrow: 'Consent', description: 'Choose how Flash Flights may contact you. Both consents are required for this workflow.' },
   { title: 'One last look', eyebrow: 'Review & submit', description: 'Confirm every detail before submitting the booking request to the demonstration.' },
 ]
 
@@ -448,7 +448,7 @@ export function BookingRequestPage() {
             </p>
           </div>
           <div className="booking-hero__ticket" aria-hidden="true">
-            <div className="booking-hero__ticket-head"><span>FLIGHTSFUZZ</span><span>FF / REQUEST</span></div>
+            <div className="booking-hero__ticket-head"><span>FLASH FLIGHTS</span><span>FF / REQUEST</span></div>
             <div className="booking-hero__ticket-route">
               <span><b>{first.from.code}</b><small>{first.from.city}</small></span>
               <span className="booking-hero__ticket-line"><Plane size={16} /></span>

@@ -23,6 +23,7 @@ import { NoticeCard } from '../components/notices/NoticeCard'
 import { ReadingProgress } from '../components/shared/ReadingProgress'
 import { Reveal } from '../components/shared/Reveal'
 import { ScrollToContent } from '../components/shared/ScrollToContent'
+import { SmartImage } from '../components/shared/SmartImage'
 import { formatDate } from '../lib/utils/date'
 
 type ShareStatus = 'idle' | 'copied' | 'shared' | 'error'
@@ -91,9 +92,9 @@ export function ArticlePage() {
 
   useEffect(() => {
     if (!article) return
-    document.title = `${article.title} — FlightsFuzz`
+    document.title = `${article.title} — Flash Flights`
     return () => {
-      document.title = 'Notices — FlightsFuzz'
+      document.title = 'Notices — Flash Flights'
     }
   }, [article])
 
@@ -236,7 +237,12 @@ export function ArticlePage() {
       <div className="container article-cover">
         <Reveal>
           <figure>
-            <img src={article.coverImage} alt={article.coverAlt} />
+            <SmartImage
+              key={article.coverImage}
+              src={article.coverImage}
+              alt={article.coverAlt}
+              wrapperClassName="article-cover__media"
+            />
             <figcaption>{article.coverAlt} · demonstration image</figcaption>
           </figure>
         </Reveal>
@@ -258,7 +264,7 @@ export function ArticlePage() {
               <TriangleAlert size={18} />
               <p>
                 <strong>Demonstration content.</strong> This article was written to demonstrate the
-                editorial experience. It is not an official FlightsFuzz announcement, live fare,
+                editorial experience. It is not an official Flash Flights announcement, live fare,
                 airline statement or travel advisory. Always verify details with the airline and
                 official authorities.
               </p>
@@ -306,7 +312,7 @@ export function ArticlePage() {
               <h2>RELATED<br />DISPATCHES.</h2>
             </Reveal>
             <Reveal className="article-related__aside" delay={60}>
-              <p>More sample guides and notices from the FlightsFuzz editorial desk.</p>
+              <p>More sample guides and notices from the Flash Flights editorial desk.</p>
               <Link to="/notices" className="text-link">All notices <ArrowUpRight size={14} /></Link>
             </Reveal>
           </div>

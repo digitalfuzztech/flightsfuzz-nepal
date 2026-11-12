@@ -28,7 +28,7 @@ const STEPS = [
   {
     number: '04',
     title: 'Complete booking with our team',
-    copy: 'Discuss live options, fare rules, documents and payment directly with FlightsFuzz. The final ticket is issued only after confirmation.',
+    copy: 'Discuss live options, fare rules, documents and payment directly with Flash Flights. The final ticket is issued only after confirmation.',
     icon: BadgeCheck,
     tag: 'Direct conversation',
   },

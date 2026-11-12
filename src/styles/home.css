@@ -39,7 +39,7 @@
   max-width: 920px;
   max-height: 920px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(237, 28, 46, 0.25) 0%, rgba(237, 28, 46, 0.04) 42%, transparent 70%);
+  background: radial-gradient(circle, rgba(122, 149, 255, 0.22) 0%, rgba(122, 149, 255, 0.04) 42%, transparent 70%);
   filter: blur(20px);
 }
 
@@ -150,7 +150,7 @@
 }
 
 .hero__points svg {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .hero__visual {
@@ -184,7 +184,7 @@
   position: absolute;
   inset: 50% 0 auto;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(237, 28, 46, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(122, 149, 255, 0.5), transparent);
 }
 
 .hero__orbit-dot {
@@ -192,8 +192,8 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--red);
-  box-shadow: 0 0 0 6px rgba(237, 28, 46, 0.14);
+  background: var(--accent);
+  box-shadow: 0 0 0 6px var(--accent-soft);
 }
 
 .hero__orbit-dot--one {
@@ -303,7 +303,7 @@
 }
 
 .boarding-slip__top span:last-child {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .boarding-slip__route {
@@ -409,7 +409,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
 }
 
 @keyframes ticker {
@@ -455,9 +455,6 @@
 }
 
 .route-card__image {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -598,7 +595,7 @@
   max-width: 600px;
   max-height: 600px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(237, 28, 46, 0.16), transparent 68%);
+  background: radial-gradient(circle, rgba(122, 149, 255, 0.16), transparent 68%);
   filter: blur(40px);
   pointer-events: none;
 }
@@ -652,7 +649,7 @@
   gap: 26px;
   min-height: 342px;
   background:
-    radial-gradient(ellipse at 100% 100%, rgba(237, 28, 46, 0.19), transparent 55%),
+    radial-gradient(ellipse at 100% 100%, rgba(36, 70, 216, 0.19), transparent 55%),
     #101010;
 }
 
@@ -685,7 +682,7 @@
 .why-card--accent {
   grid-column: span 5;
   background:
-    radial-gradient(ellipse at 100% 0%, rgba(237, 28, 46, 0.23), transparent 60%),
+    radial-gradient(ellipse at 100% 0%, rgba(36, 70, 216, 0.23), transparent 60%),
     #141414;
 }
 
@@ -748,9 +745,9 @@
   width: 43px;
   height: 43px;
   margin-bottom: 3px;
-  border: 1px solid rgba(237, 28, 46, 0.3);
+  border: 1px solid rgba(122, 149, 255, 0.3);
   border-radius: 50%;
-  background: rgba(237, 28, 46, 0.08);
+  background: rgba(122, 149, 255, 0.1);
   color: var(--red);
 }
 
@@ -999,7 +996,7 @@
   left: 0;
   width: 36%;
   height: 1px;
-  background: linear-gradient(90deg, var(--red), rgba(237, 28, 46, 0));
+  background: linear-gradient(90deg, var(--brand), var(--accent), transparent);
 }
 
 .how-step {
@@ -1040,7 +1037,7 @@
 }
 
 .how-step:hover .how-step__icon {
-  background: var(--red);
+  background: var(--brand-fill);
   border-color: var(--red);
   color: #fff;
 }
@@ -1127,10 +1124,7 @@
   color: #fff;
 }
 
-.destination-card img {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
+.destination-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1145,7 +1139,7 @@
   transition: background 0.3s ease;
 }
 
-.destination-card:hover img {
+.destination-card:hover .destination-card__image {
   transform: scale(1.06);
 }
 
@@ -1223,7 +1217,7 @@
 }
 
 .destination-card:hover .destination-card__arrow {
-  background: var(--red);
+  background: var(--brand-fill);
   border-color: var(--red);
   transform: rotate(7deg);
 }
@@ -1543,7 +1537,7 @@
 }
 
 .accordion__item.is-open .accordion__icon {
-  background: var(--red);
+  background: var(--brand-fill);
   border-color: var(--red);
   color: #fff;
   transform: rotate(45deg);
@@ -1593,7 +1587,7 @@
   max-width: 860px;
   max-height: 860px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(237, 28, 46, 0.24), transparent 67%);
+  background: radial-gradient(circle, rgba(122, 149, 255, 0.22), transparent 67%);
   filter: blur(32px);
 }
 
@@ -1621,7 +1615,7 @@
 }
 
 .final-cta h2 span {
-  color: var(--red);
+  color: var(--accent);
 }
 
 .final-cta__lead {
@@ -1663,5 +1657,5 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
 }

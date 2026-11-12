@@ -22,7 +22,7 @@ export function PrivacyPolicyPage() {
       <PageHero
         eyebrow="Privacy policy · demonstration"
         title={<>YOUR DATA.<br />STATED <span className="text-red">PLAINLY.</span></>}
-        description="This policy describes what the FlightsFuzz frontend demonstration actually does with information. It is written for the current prototype, not for a live booking service."
+        description="This policy describes what the Flash Flights frontend demonstration actually does with information. It is written for the current prototype, not for a live booking service."
         compact
       >
         <div className="legal-meta">
@@ -67,12 +67,12 @@ export function PrivacyPolicyPage() {
               <span className="legal-section__number">01</span>
               <h2>Scope of this policy</h2>
               <p>
-                This policy applies to the FlightsFuzz website and its pages for flight search,
+                This policy applies to the Flash Flights website and its pages for flight search,
                 popular routes, about, contact, booking requests and booking confirmation. It
                 describes the behaviour of this demonstration build.
               </p>
               <p>
-                FlightsFuzz is presented as a Nepal-focused flight booking request desk. This
+                Flash Flights is presented as a Nepal-focused flight booking request desk. This
                 frontend does not operate as a live travel agency, does not issue tickets and does
                 not collect payment. The policy is demonstration copy and is not legal advice.
               </p>
@@ -219,7 +219,7 @@ export function PrivacyPolicyPage() {
                 settings, and you can leave the booking flow at any time without creating a record.
               </p>
               <p>
-                Because no request reaches FlightsFuzz in this build, there is no stored record to
+                Because no request reaches Flash Flights in this build, there is no stored record to
                 access, correct or delete. For questions about this demonstration, use the contact
                 page. Official contact channels are not yet active.
               </p>

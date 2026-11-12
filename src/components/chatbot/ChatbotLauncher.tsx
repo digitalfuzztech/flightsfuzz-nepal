@@ -16,10 +16,10 @@ export function ChatbotLauncher({ open, hasUnread, onClick }: ChatbotLauncherPro
       onClick={onClick}
       aria-label={
         open
-          ? 'Close the FlightsFuzz assistant'
+          ? 'Close the Flash Flights assistant'
           : hasUnread
-            ? 'Open the FlightsFuzz assistant, new message'
-            : 'Open the FlightsFuzz assistant'
+            ? 'Open the Flash Flights assistant, new message'
+            : 'Open the Flash Flights assistant'
       }
       aria-expanded={open}
       aria-controls="flightsfuzz-chat-panel"
@@ -30,7 +30,7 @@ export function ChatbotLauncher({ open, hasUnread, onClick }: ChatbotLauncherPro
       </span>
       {hasUnread ? <span className="chatbot-launcher__dot" aria-hidden="true" /> : null}
       <span className="chatbot-launcher__tooltip" role="tooltip">
-        Need help? Ask FlightsFuzz
+        Need help? Ask Flash Flights
       </span>
     </button>
   )

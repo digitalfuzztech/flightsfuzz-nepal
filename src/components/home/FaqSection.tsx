@@ -21,7 +21,7 @@ export function FaqSection() {
             <span className="micro-label">Still unsure?</span>
             <p>Ask a person directly. Official contact channels will be published on the contact page.</p>
             <Link to="/contact" className="btn btn--outline btn--sm">
-              Contact FlightsFuzz <ArrowUpRight size={16} />
+              Contact Flash Flights <ArrowUpRight size={16} />
             </Link>
             <Link to="/contact#whatsapp" className="text-link">
               <MessageCircle size={15} /> WhatsApp details

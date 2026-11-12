@@ -52,7 +52,7 @@ const RULES: IntentRule[] = [
     compose: () =>
       reply(
         'greeting',
-        'Namaste — I’m the FlightsFuzz assistant. I can explain the booking-request flow, point you to flight search, or help you find the right page. What are you planning?',
+        'Namaste — I’m the Flash Flights assistant. I can explain the booking-request flow, point you to flight search, or help you find the right page. What are you planning?',
         [link.search, link.request, link.notices],
       ),
   },
@@ -68,7 +68,7 @@ const RULES: IntentRule[] = [
   },
   {
     id: 'booking-process',
-    keywords: ['request a booking', 'how do i request', 'booking request', 'how does flightsfuzz work', 'how it works', 'start a request'],
+    keywords: ['request a booking', 'how do i request', 'booking request', 'how does flash flights work', 'how it works', 'start a request'],
     compose: () =>
       reply(
         'booking-process',
@@ -102,7 +102,7 @@ const RULES: IntentRule[] = [
     compose: () =>
       reply(
         'international',
-        'Yes — FlightsFuzz is designed around international travel from Nepal, including the Gulf, South Asia, Southeast Asia, East Asia, Europe and Australia. Search any supported airport pair, or describe the itinerary to the team if it is more complex.',
+        'Yes — Flash Flights is designed around international travel from Nepal, including the Gulf, South Asia, Southeast Asia, East Asia, Europe and Australia. Search any supported airport pair, or describe the itinerary to the team if it is more complex.',
         [link.search, link.contact],
       ),
   },
@@ -204,7 +204,7 @@ export const SUGGESTED_PROMPTS: string[] = [
   'I want to book a flight.',
   'How do I request a booking?',
   'What documents do I need?',
-  'How does FlightsFuzz work?',
+  'How does Flash Flights work?',
   'Can I book an international flight?',
   'How do I contact your team?',
   'How does payment work?',

@@ -127,7 +127,7 @@ small {
 }
 
 ::selection {
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
 }
 
@@ -235,8 +235,8 @@ small {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--red);
-  box-shadow: 0 0 0 5px var(--red-soft);
+  background: var(--accent);
+  box-shadow: 0 0 0 5px var(--accent-soft);
   animation: dot-pulse 2.8s ease-in-out infinite;
 }
 
@@ -257,11 +257,13 @@ small {
   place-items: center;
   min-width: 30px;
   height: 24px;
-  border: 1px solid var(--line-strong);
+  border: 1px solid var(--accent);
   border-radius: var(--radius-pill);
-  color: var(--red);
+  background: var(--accent);
+  color: var(--on-accent);
   font-family: var(--font-mono);
   font-size: 0.64rem;
+  font-weight: 700;
   letter-spacing: 0.04em;
 }
 
@@ -408,15 +410,15 @@ small {
 }
 
 .btn--primary {
-  background: var(--red);
-  border-color: var(--red);
+  background: var(--brand-fill);
+  border-color: var(--brand-fill);
   color: #fff;
-  box-shadow: 0 8px 20px rgba(237, 28, 46, 0.18);
+  box-shadow: 0 8px 20px rgba(36, 70, 216, 0.18);
 }
 
 .btn--primary:hover:not(:disabled) {
-  background: var(--red-strong);
-  border-color: var(--red-strong);
+  background: var(--brand-fill-strong);
+  border-color: var(--brand-fill-strong);
   box-shadow: var(--shadow-red);
 }
 
@@ -427,8 +429,8 @@ small {
 }
 
 .btn--dark:hover:not(:disabled) {
-  background: var(--red);
-  border-color: var(--red);
+  background: var(--brand-fill);
+  border-color: var(--brand-fill);
   color: #fff;
 }
 
@@ -719,7 +721,7 @@ small {
   z-index: 2000;
   padding: 10px 16px;
   border-radius: var(--radius-sm);
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
   font-size: 0.8rem;
   font-weight: 650;
@@ -754,9 +756,9 @@ small {
 @keyframes dot-pulse {
   0%,
   100% {
-    box-shadow: 0 0 0 4px var(--red-soft);
+    box-shadow: 0 0 0 4px var(--accent-soft);
   }
   50% {
-    box-shadow: 0 0 0 7px rgba(237, 28, 46, 0.04);
+    box-shadow: 0 0 0 7px rgba(255, 198, 43, 0.05);
   }
 }

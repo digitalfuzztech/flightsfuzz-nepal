@@ -59,7 +59,7 @@
 .scroll-cue__line span {
   position: absolute;
   inset: 0;
-  background: var(--red);
+  background: var(--brand-fill);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s var(--ease-out);
@@ -87,7 +87,7 @@
 .scroll-cue:hover .scroll-cue__icon,
 .scroll-cue:focus-visible .scroll-cue__icon {
   border-color: var(--red);
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
 }
 
@@ -339,7 +339,12 @@
 .reveal .destination-card img,
 .reveal .route-card__image {
   clip-path: inset(0 0 100% 0);
-  transition: clip-path 0.9s var(--ease-out);
+  transition:
+    clip-path 0.9s var(--ease-out),
+    opacity 0.6s ease,
+    scale 0.65s var(--ease-out),
+    transform 0.8s var(--ease-out),
+    filter 0.5s ease;
 }
 
 .reveal.is-visible .destination-card img,

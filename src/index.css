@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FlightsFuzz — stylesheet entry
+   Flash Flights — stylesheet entry
    Import order matters: tokens → base → chrome → feature areas → pages → responsive
    ========================================================================== */
 
@@ -15,4 +15,6 @@
 @import './styles/announcement.css';
 @import './styles/chatbot.css';
 @import './styles/motion.css';
+@import './styles/images.css';
 @import './styles/responsive.css';
+@import './styles/typography.css';

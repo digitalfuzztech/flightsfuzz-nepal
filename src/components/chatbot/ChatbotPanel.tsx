@@ -63,7 +63,7 @@ export function ChatbotPanel({ open, messages, typing, onSend, onClose, onMinimi
       className={cn('chatbot-panel', open && 'is-open')}
       role="dialog"
       aria-modal="false"
-      aria-label="FlightsFuzz virtual assistant"
+      aria-label="Flash Flights virtual assistant"
       inert={!open}
     >
       <header className="chatbot-panel__head">
@@ -72,7 +72,7 @@ export function ChatbotPanel({ open, messages, typing, onSend, onClose, onMinimi
           <i className="chatbot-panel__status" />
         </span>
         <div className="chatbot-panel__identity">
-          <strong>FlightsFuzz Assistant</strong>
+          <strong>Flash Flights Assistant</strong>
           <span>
             <i aria-hidden="true" /> Demo assistant · not a live agent
           </span>
@@ -117,7 +117,7 @@ export function ChatbotPanel({ open, messages, typing, onSend, onClose, onMinimi
       </div>
 
       <form className="chatbot-panel__composer" onSubmit={submit}>
-        <label className="sr-only" htmlFor="chatbot-input">Ask the FlightsFuzz assistant</label>
+        <label className="sr-only" htmlFor="chatbot-input">Ask the Flash Flights assistant</label>
         <div className="chatbot-panel__input-wrap">
           <input
             id="chatbot-input"

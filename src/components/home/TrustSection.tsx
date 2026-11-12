@@ -12,7 +12,7 @@ const REASONS = [
   {
     number: '02',
     title: 'Human review before anything moves',
-    copy: 'A FlightsFuzz team member checks availability, fare rules and the details you provided before discussing a booking.',
+    copy: 'A Flash Flights team member checks availability, fare rules and the details you provided before discussing a booking.',
   },
   {
     number: '03',
@@ -40,12 +40,12 @@ export function TrustSection() {
             index="05"
             eyebrow="Why book with us"
             title={<span id="trust-title">THE DETAILS<br />MATTER.</span>}
-            description="FlightsFuzz is designed for the part of flight booking that search engines often leave you to figure out alone."
+            description="Flash Flights is designed for the part of flight booking that search engines often leave you to figure out alone."
             align="left"
           />
           <div className="trust-ticket" aria-hidden="true">
             <div className="trust-ticket__head">
-              <span>FLIGHTSFUZZ</span>
+              <span>FLASH FLIGHTS</span>
               <span>ASSISTED BOOKING</span>
             </div>
             <div className="trust-ticket__body">

@@ -21,11 +21,13 @@ export function Logo({
               compact && 'logo--compact',
               className,
           )}
-          aria-label="FlightsFuzz — home"
+          aria-label="Flash Flights — home"
       >
         <img
-            src="/images/logo-primary.png"
-            alt="FlightsFuzz"
+            src="/images/flash-flights-logo.png"
+            alt="Flash Flights"
+            width={2224}
+            height={1318}
             className="logo__image"
             draggable={false}
         />

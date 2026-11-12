@@ -27,9 +27,9 @@ export function AboutPage() {
   return (
     <div className="about-page">
       <PageHero
-        eyebrow="About FlightsFuzz"
+        eyebrow="About Flash Flights"
         title={<>BUILT FOR THE<br />HUMAN SIDE OF<br /><span className="text-red">FLYING.</span></>}
-        description="FlightsFuzz is a flight-booking request platform for travellers from Nepal. It combines a fast search experience with the thing search engines cannot replace: a person who can help with the details."
+        description="Flash Flights is a flight-booking request platform for travellers from Nepal. It combines a fast search experience with the thing search engines cannot replace: a person who can help with the details."
         image="/images/destinations/kathmandu.jpg"
         imageAlt="Himalayan mountains and a stupa near Kathmandu"
       >
@@ -54,13 +54,13 @@ export function AboutPage() {
               obvious from a list of prices.
             </p>
             <p>
-              FlightsFuzz is designed around that gap. You can search and compare clearly labelled
+              Flash Flights is designed around that gap. You can search and compare clearly labelled
               demonstration options, then send a structured booking request. In the production
-              workflow, a FlightsFuzz team member reviews the request, discusses live availability
+              workflow, a Flash Flights team member reviews the request, discusses live availability
               and guides the final booking.
             </p>
             <div className="about-manifesto__signature">
-              <span>FLIGHTSFUZZ</span>
+              <span>FLASH FLIGHTS</span>
               <small>NEPAL · FLIGHT BOOKING DESK</small>
             </div>
           </Reveal>

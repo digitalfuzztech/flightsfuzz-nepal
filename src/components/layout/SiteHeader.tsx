@@ -86,7 +86,7 @@ export function SiteHeader() {
         aria-hidden={!open}
       >
         <div className="mobile-nav__inner">
-          <p className="micro-label">MENU / FLIGHTSFUZZ</p>
+          <p className="micro-label">MENU / FLASH FLIGHTS</p>
           <nav aria-label="Mobile navigation">
             {NAV_ITEMS.map((item, index) => (
               <NavLink

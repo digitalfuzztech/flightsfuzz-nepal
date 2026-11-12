@@ -23,6 +23,7 @@ import {
 import { NoticeCard, type NoticeCardVariant } from '../components/notices/NoticeCard'
 import { ScrollToContent } from '../components/shared/ScrollToContent'
 import { Reveal } from '../components/shared/Reveal'
+import { SmartImage } from '../components/shared/SmartImage'
 import { formatDate } from '../lib/utils/date'
 import { cn } from '../lib/utils/format'
 
@@ -88,7 +89,7 @@ export function NoticesPage() {
               IN THE <span>WORLD OF FLIGHTS.</span>
             </h1>
             <p className="notices-hero__lead">
-              Travel guides, product notes and clearly labelled sample updates from the FlightsFuzz
+              Travel guides, product notes and clearly labelled sample updates from the Flash Flights
               editorial desk. Read the thinking behind the request workflow, then search when you are
               ready to plan.
             </p>
@@ -101,11 +102,19 @@ export function NoticesPage() {
 
           <Reveal className="notices-hero__visual" delay={120}>
             <figure className="notices-hero__shot notices-hero__shot--main">
-              <img src="/images/destinations/tokyo.jpg" alt="Tokyo street at night" />
+              <SmartImage
+                src="/images/destinations/tokyo.jpg"
+                alt="Tokyo street at night"
+                wrapperClassName="smart-image--fill"
+              />
               <figcaption>TOKYO / GUIDE</figcaption>
             </figure>
             <figure className="notices-hero__shot notices-hero__shot--small">
-              <img src="/images/destinations/kathmandu.jpg" alt="Himalayan mountains near Kathmandu" />
+              <SmartImage
+                src="/images/destinations/kathmandu.jpg"
+                alt="Himalayan mountains near Kathmandu"
+                wrapperClassName="smart-image--fill"
+              />
               <figcaption>KTM / HOME</figcaption>
             </figure>
             <span className="notices-hero__stamp">
@@ -126,7 +135,12 @@ export function NoticesPage() {
 
             <Reveal className="notices-featured__article" delay={70}>
               <Link to={`/notices/${featured.slug}`} className="notices-featured__media" aria-label={`Read: ${featured.title}`}>
-                <img src={featured.coverImage} alt={featured.coverAlt} />
+                <SmartImage
+                  key={featured.coverImage}
+                  src={featured.coverImage}
+                  alt={featured.coverAlt}
+                  wrapperClassName="smart-image--fill"
+                />
                 <span className="notices-featured__shade" aria-hidden="true" />
                 <span className="notices-featured__tag">{getNoticeCategory(featured.category)?.label}</span>
                 <span className="notices-featured__media-code" aria-hidden="true">FF / FEATURE</span>
@@ -154,7 +168,7 @@ export function NoticesPage() {
 
             <p className="notices-demo-note">
               All articles in this section are demonstration content written for the frontend build.
-              They are not official FlightsFuzz announcements, live deals or travel advisories.
+              They are not official Flash Flights announcements, live deals or travel advisories.
             </p>
           </div>
         </section>
@@ -316,7 +330,7 @@ export function NoticesPage() {
               Browse popular routes <ArrowUpRight size={15} />
             </Link>
             <Link to="/about" className="text-link text-link--light">
-              How FlightsFuzz works <ArrowUpRight size={15} />
+              How Flash Flights works <ArrowUpRight size={15} />
             </Link>
             <Link to="/booking-request" className="text-link text-link--light">
               Start a booking request <ArrowUpRight size={15} />

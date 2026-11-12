@@ -12,7 +12,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Is my booking confirmed immediately?',
     answer:
-      'No. FlightsFuzz is a booking-request service. Submitting a request does not issue a ticket or reserve a seat. A team member will review availability, fare rules and documents with you before anything is confirmed.',
+      'No. Flash Flights is a booking-request service. Submitting a request does not issue a ticket or reserve a seat. A team member will review availability, fare rules and documents with you before anything is confirmed.',
   },
   {
     question: 'How will I receive my flight quotation?',
@@ -22,7 +22,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: 'Can I book an international flight?',
     answer:
-      'Yes. FlightsFuzz is designed around international travel from Nepal, including the Gulf, South Asia, Southeast Asia, Europe, East Asia and Australia. Domestic Nepal requests can also be submitted for assistance.',
+      'Yes. Flash Flights is designed around international travel from Nepal, including the Gulf, South Asia, Southeast Asia, Europe, East Asia and Australia. Domestic Nepal requests can also be submitted for assistance.',
   },
   {
     question: 'What documents are required?',
@@ -30,14 +30,14 @@ export const FAQ_ITEMS: FaqItem[] = [
       'It depends on the route, your nationality and the airline. Passports are commonly required for international travel, while citizenship, Aadhaar or national ID documents may be relevant for specific itineraries. The team will confirm the exact requirements before booking.',
   },
   {
-    question: 'How do I communicate with FlightsFuzz?',
+    question: 'How do I communicate with Flash Flights?',
     answer:
       'The preferred channels are email and WhatsApp. You choose whether to consent to each channel during the booking request. Our official contact details will be published on the Contact page once they are activated.',
   },
   {
     question: 'How do payments work?',
     answer:
-      'There is no online payment in this demonstration. In the real workflow, payment instructions and receipts would come directly from the FlightsFuzz team after a quotation is accepted. Never send money to an unverified account.',
+      'There is no online payment in this demonstration. In the real workflow, payment instructions and receipts would come directly from the Flash Flights team after a quotation is accepted. Never send money to an unverified account.',
   },
   {
     question: 'Can I request assistance for multiple passengers?',

@@ -4,6 +4,7 @@ import type { NoticeArticle } from '../../lib/data/notices'
 import { getNoticeCategory } from '../../lib/data/notices'
 import { formatDate } from '../../lib/utils/date'
 import { cn } from '../../lib/utils/format'
+import { SmartImage } from '../shared/SmartImage'
 
 export type NoticeCardVariant = 'standard' | 'wide' | 'tall' | 'text'
 
@@ -24,7 +25,12 @@ export function NoticeCard({ article, variant = 'standard', index = 0 }: NoticeC
       <Link to={`/notices/${article.slug}`} className="notice-card__link" aria-label={`Read: ${article.title}`}>
         {variant !== 'text' ? (
           <div className="notice-card__media">
-            <img src={article.coverImage} alt={article.coverAlt} loading="lazy" />
+            <SmartImage
+              src={article.coverImage}
+              alt={article.coverAlt}
+              loading="lazy"
+              wrapperClassName="smart-image--fill"
+            />
             <span className="notice-card__shade" aria-hidden="true" />
             <span className="notice-card__category">{category?.label ?? 'Notice'}</span>
             <span className="notice-card__index" aria-hidden="true">

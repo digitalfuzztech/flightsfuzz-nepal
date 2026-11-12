@@ -386,7 +386,7 @@ export function FlightSearchForm({
         <div className="flight-search__foot">
           <p>
             <strong>How it works:</strong> search a route, choose a demonstration option, then send a
-            booking request. A FlightsFuzz team member follows up personally.
+            booking request. A Flash Flights team member follows up personally.
           </p>
           <span className="flight-search__foot-mark">SEARCH → REQUEST → CONFIRM</span>
         </div>

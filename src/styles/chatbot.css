@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FlightsFuzz assistant — floating dock, launcher, panel
+   Flash Flights assistant — floating dock, launcher, panel
    ========================================================================== */
 
 .floating-dock {
@@ -42,10 +42,10 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: linear-gradient(145deg, var(--red-strong) 0%, var(--red) 58%, #ff5765 100%);
+  background: linear-gradient(145deg, var(--red-strong) 0%, var(--red) 58%, #5f7cff 100%);
   color: #fff;
   box-shadow:
-    0 16px 34px rgba(237, 28, 46, 0.32),
+    0 16px 34px rgba(36, 70, 216, 0.32),
     inset 0 1px 0 rgba(255, 255, 255, 0.28);
   transition:
     transform 0.3s var(--ease-out),
@@ -55,7 +55,7 @@
 .chatbot-launcher:hover {
   transform: translateY(-3px) scale(1.035);
   box-shadow:
-    0 22px 44px rgba(237, 28, 46, 0.4),
+    0 22px 44px rgba(36, 70, 216, 0.4),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
@@ -71,7 +71,7 @@
 .chatbot-launcher__glow {
   position: absolute;
   inset: -6px;
-  border: 1px solid rgba(237, 28, 46, 0.4);
+  border: 1px solid rgba(36, 70, 216, 0.4);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -289,7 +289,7 @@
   border-radius: 13px;
   background: linear-gradient(145deg, var(--red-strong), var(--red));
   color: #fff;
-  box-shadow: 0 8px 18px rgba(237, 28, 46, 0.34);
+  box-shadow: 0 8px 18px rgba(36, 70, 216, 0.34);
 }
 
 .chatbot-panel__status {
@@ -493,7 +493,7 @@
 
 .chat-action:hover {
   border-color: var(--red);
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
 }
 
@@ -657,7 +657,7 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
   transition:
     background-color 0.2s ease,
@@ -666,7 +666,7 @@
 }
 
 .chatbot-panel__send:hover:not(:disabled) {
-  background: var(--red-strong);
+  background: var(--brand-fill-strong);
   transform: scale(1.06);
 }
 

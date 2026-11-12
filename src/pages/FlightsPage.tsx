@@ -197,7 +197,7 @@ export function FlightsPage() {
                   <h2>This itinerary deserves a human.</h2>
                   <p>
                     Multi-city pricing and routing are reviewed manually. Send the legs below and a
-                    FlightsFuzz team member can assemble the request with you.
+                    Flash Flights team member can assemble the request with you.
                   </p>
                 </div>
               </div>
@@ -287,7 +287,7 @@ export function FlightsPage() {
                   <Info size={16} />
                   <p>
                     Fares are illustrative totals for the selected travellers and cabin. Real fares,
-                    baggage rules and schedules must be confirmed by the FlightsFuzz team before payment.
+                    baggage rules and schedules must be confirmed by the Flash Flights team before payment.
                   </p>
                 </div>
               </div>

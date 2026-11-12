@@ -17,24 +17,24 @@ import { ArticlePage } from './pages/ArticlePage'
 import { NotFoundPage } from './pages/NotFoundPage'
 
 const PAGE_TITLES: Record<string, string> = {
-  '/': 'FlightsFuzz — Flight Booking Requests from Nepal',
-  '/flights': 'Flight Results — FlightsFuzz',
-  '/popular-routes': 'Popular Routes — FlightsFuzz',
-  '/notices': 'Notices & Articles — FlightsFuzz',
-  '/about': 'About FlightsFuzz',
-  '/contact': 'Contact — FlightsFuzz',
-  '/privacy-policy': 'Privacy Policy — FlightsFuzz',
-  '/terms-and-conditions': 'Terms & Conditions — FlightsFuzz',
-  '/booking-request': 'Booking Request — FlightsFuzz',
-  '/booking-success': 'Request Captured — FlightsFuzz',
+  '/': 'Flash Flights — Flight Booking Requests from Nepal',
+  '/flights': 'Flight Results — Flash Flights',
+  '/popular-routes': 'Popular Routes — Flash Flights',
+  '/notices': 'Notices & Articles — Flash Flights',
+  '/about': 'About Flash Flights',
+  '/contact': 'Contact — Flash Flights',
+  '/privacy-policy': 'Privacy Policy — Flash Flights',
+  '/terms-and-conditions': 'Terms & Conditions — Flash Flights',
+  '/booking-request': 'Booking Request — Flash Flights',
+  '/booking-success': 'Request Captured — Flash Flights',
 }
 
 function RouteEffects() {
   const location = useLocation()
 
   useEffect(() => {
-    const articleTitle = location.pathname.startsWith('/notices/') ? 'Notice — FlightsFuzz' : undefined
-    document.title = PAGE_TITLES[location.pathname] ?? articleTitle ?? 'Page Not Found — FlightsFuzz'
+    const articleTitle = location.pathname.startsWith('/notices/') ? 'Notice — Flash Flights' : undefined
+    document.title = PAGE_TITLES[location.pathname] ?? articleTitle ?? 'Page Not Found — Flash Flights'
   }, [location.pathname])
 
   return null

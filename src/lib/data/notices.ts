@@ -47,7 +47,7 @@ export const NOTICE_CATEGORIES: NoticeCategory[] = [
   },
   {
     id: 'flightsfuzz-announcements',
-    label: 'FlightsFuzz Announcements',
+    label: 'Flash Flights Announcements',
     description: 'Product notes about how the request desk works.',
   },
   {
@@ -74,7 +74,7 @@ export const NOTICE_CATEGORIES: NoticeCategory[] = [
 
 /**
  * Every article in this file is demonstration content written for the
- * FlightsFuzz frontend. Nothing here is an official FlightsFuzz announcement,
+ * Flash Flights frontend. Nothing here is an official Flash Flights announcement,
  * live deal, airline statement or real-world travel advisory.
  *
  * Draft and archived records are included deliberately so the public pages can
@@ -85,7 +85,7 @@ export const NOTICES: NoticeArticle[] = [
   {
     id: 'notice-booking-request',
     slug: 'how-a-booking-request-works',
-    title: 'How a FlightsFuzz booking request actually works',
+    title: 'How a Flash Flights booking request actually works',
     excerpt:
       'Search is only the first step. Here is what happens between choosing a route and holding a real ticket — and why the request is deliberately reviewed by a person.',
     category: 'travel-guides',
@@ -105,7 +105,7 @@ export const NOTICES: NoticeArticle[] = [
       },
       {
         type: 'paragraph',
-        text: 'FlightsFuzz is built around that second question. The demonstration frontend lets you search, compare clearly labelled sample flights and then send a structured request. The production workflow adds a human review layer between the request and any real ticket.',
+        text: 'Flash Flights is built around that second question. The demonstration frontend lets you search, compare clearly labelled sample flights and then send a structured request. The production workflow adds a human review layer between the request and any real ticket.',
       },
       { type: 'heading', text: 'Step one: search and shortlist' },
       {

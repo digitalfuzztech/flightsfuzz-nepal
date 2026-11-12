@@ -103,7 +103,7 @@
   border: 1px solid var(--dark-line);
   border-radius: var(--radius-md);
   background:
-    radial-gradient(ellipse at 100% 100%, rgba(237, 28, 46, 0.11), transparent 58%),
+    radial-gradient(ellipse at 100% 100%, rgba(36, 70, 216, 0.11), transparent 58%),
     #111;
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
@@ -337,7 +337,7 @@
 
 .route-tab.is-active {
   border-color: var(--red);
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
   font-weight: 650;
 }
@@ -356,7 +356,7 @@
   overflow: hidden;
   border-radius: var(--radius-lg);
   background:
-    radial-gradient(ellipse at 0% 100%, rgba(237, 28, 46, 0.18), transparent 58%),
+    radial-gradient(ellipse at 0% 100%, rgba(36, 70, 216, 0.18), transparent 58%),
     var(--black);
   color: var(--on-dark);
 }
@@ -850,7 +850,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
 }
 
 .legal-section code {
@@ -928,7 +928,7 @@
   max-width: 760px;
   max-height: 760px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(237, 28, 46, 0.23), transparent 67%);
+  background: radial-gradient(circle, rgba(36, 70, 216, 0.23), transparent 67%);
   filter: blur(24px);
   pointer-events: none;
 }
@@ -1013,9 +1013,9 @@
   width: 82px;
   height: 82px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
-  box-shadow: 0 0 0 12px rgba(237, 28, 46, 0.12), 0 20px 45px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 0 12px rgba(36, 70, 216, 0.12), 0 20px 45px rgba(0, 0, 0, 0.35);
   animation: success-pop 0.65s var(--ease-out) both;
 }
 
@@ -1468,7 +1468,7 @@
   max-width: 760px;
   max-height: 760px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(237, 28, 46, 0.23), transparent 66%);
+  background: radial-gradient(circle, rgba(36, 70, 216, 0.23), transparent 66%);
   filter: blur(26px);
 }
 
@@ -1533,7 +1533,7 @@
   position: absolute;
   inset: -1px;
   border: 1px solid transparent;
-  border-top-color: rgba(237, 28, 46, 0.7);
+  border-top-color: rgba(36, 70, 216, 0.7);
   border-radius: 50%;
   animation: preloader-ring 9s linear infinite;
 }
@@ -1557,10 +1557,10 @@
   width: 96px;
   height: 96px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
   transform: rotate(-8deg);
-  box-shadow: 0 0 0 14px rgba(237, 28, 46, 0.12), 0 30px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 14px rgba(36, 70, 216, 0.12), 0 30px 60px rgba(0, 0, 0, 0.4);
 }
 
 .not-found__code {

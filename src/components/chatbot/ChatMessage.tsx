@@ -13,7 +13,7 @@ export function ChatMessage({ message, onNavigate }: ChatMessageProps) {
   const isAssistant = message.role === 'assistant'
 
   return (
-    <article className={cn('chat-message', `chat-message--${message.role}`)} aria-label={`${isAssistant ? 'FlightsFuzz assistant' : 'You'} at ${formatChatTime(message.createdAt)}`}>
+    <article className={cn('chat-message', `chat-message--${message.role}`)} aria-label={`${isAssistant ? 'Flash Flights assistant' : 'You'} at ${formatChatTime(message.createdAt)}`}>
       {isAssistant ? (
         <span className="chat-message__avatar" aria-hidden="true">
           <Sparkles size={14} strokeWidth={2.1} />

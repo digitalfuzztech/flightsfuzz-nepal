@@ -93,7 +93,7 @@ export function StepReview({ search, flight }: StepReviewProps) {
         )}
         <p className="selected-flight__note">
           Demonstration schedules and fares are fictional. Availability is confirmed only in a
-          conversation with the FlightsFuzz team.
+          conversation with the Flash Flights team.
         </p>
       </div>
 

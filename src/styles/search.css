@@ -77,7 +77,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--red);
+  background: var(--brand-fill);
   box-shadow: 0 0 0 4px var(--red-soft);
 }
 
@@ -218,7 +218,7 @@
 }
 
 .search-field__clear:hover {
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
 }
 
@@ -281,8 +281,8 @@
 }
 
 .swap-button:hover {
-  border-color: var(--red);
-  background: var(--red);
+  border-color: var(--brand-fill);
+  background: var(--brand-fill);
   color: #fff;
   transform: rotate(180deg);
 }
@@ -296,9 +296,9 @@
   min-height: 72px;
   margin: -1px -1px -1px 0;
   padding: 0 20px;
-  border: 1px solid var(--red);
+  border: 1px solid var(--brand-fill);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
   font-size: 0.77rem;
   font-weight: 650;
@@ -307,8 +307,8 @@
 }
 
 .search-submit:hover {
-  background: var(--red-strong);
-  border-color: var(--red-strong);
+  background: var(--brand-fill-strong);
+  border-color: var(--brand-fill-strong);
 }
 
 .search-submit svg {
@@ -576,7 +576,7 @@
 }
 
 .calendar-day.is-selected {
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
   font-weight: 650;
 }
@@ -699,7 +699,7 @@
 
 .counter button:hover:not(:disabled) {
   border-color: var(--red);
-  background: var(--red);
+  background: var(--brand-fill);
   color: #fff;
 }
 

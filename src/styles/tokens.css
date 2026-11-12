@@ -1,32 +1,58 @@
 /* ==========================================================================
-   FlightsFuzz — design tokens
-   A dual-theme system built around the brand red and a warm editorial base.
+   Flash Flights — design tokens
+   A dual-theme system built around the logo's royal blue and golden yellow.
    ========================================================================== */
 
 :root {
-  --red: #ed1c2e;
-  --red-strong: #c91525;
-  --red-soft: rgba(237, 28, 46, 0.09);
-  --red-line: rgba(237, 28, 46, 0.28);
+  /* Brand ---------------------------------------------------------------- */
+  --brand: #2446d8;
+  --brand-strong: #1931ba;
+  --brand-bright: #7a95ff;
+  --brand-bright-strong: #a9bcff;
+  --brand-soft: rgba(36, 70, 216, 0.09);
+  --brand-line: rgba(36, 70, 216, 0.28);
+  --brand-fill: #2446d8;
+  --brand-fill-strong: #1931ba;
+  --brand-on-dark: #8aa4ff;
+  --brand-on-dark-strong: #b3c3ff;
+  --brand-on-dark-soft: rgba(138, 164, 255, 0.16);
+  --brand-on-dark-line: rgba(138, 164, 255, 0.38);
 
-  --black: #090909;
-  --charcoal: #171717;
-  --charcoal-2: #242424;
+  --accent: #ffc62b;
+  --accent-strong: #f0b81b;
+  --accent-soft: rgba(255, 198, 43, 0.18);
+  --accent-line: rgba(255, 198, 43, 0.42);
+  --on-accent: #10182f;
 
-  --bg: #f5f3ef;
-  --bg-deep: #efece6;
+  /* Compatibility aliases used throughout the existing styles. */
+  --red: var(--brand);
+  --red-strong: var(--brand-strong);
+  --red-soft: var(--brand-soft);
+  --red-line: var(--brand-line);
+  --shadow-red: 0 18px 40px rgba(36, 70, 216, 0.24);
+
+  /* Dark surfaces and text ---------------------------------------------- */
+  --black: #0b1226;
+  --navy: #10182f;
+  --navy-deep: #0b1226;
+  --charcoal: #171d30;
+  --charcoal-2: #242c44;
+
+  /* Light theme ---------------------------------------------------------- */
+  --bg: #f7f8fc;
+  --bg-deep: #eff2fa;
   --surface: #ffffff;
-  --surface-2: #f0ede7;
-  --surface-3: #e7e5e4;
-  --ink: #090909;
-  --ink-soft: #2d2b28;
-  --muted: #75716b;
-  --muted-strong: #5d5953;
-  --line: #e7e5e4;
-  --line-strong: #d5d1ca;
-  --on-dark: #f8f6f2;
-  --on-dark-muted: #a8a29a;
-  --dark-line: #2d2d2d;
+  --surface-2: #f1f4fb;
+  --surface-3: #e3e7f0;
+  --ink: #10182f;
+  --ink-soft: #2a3550;
+  --muted: #6b7488;
+  --muted-strong: #4f596e;
+  --line: #e3e7f0;
+  --line-strong: #d2d8e6;
+  --on-dark: #f7f9ff;
+  --on-dark-muted: #a8b2c8;
+  --dark-line: #303950;
   --glass: rgba(255, 255, 255, 0.86);
   --inset-glow: rgba(255, 255, 255, 0.7);
 
@@ -39,9 +65,19 @@
   --font-display: 'Barlow Condensed', 'Arial Narrow', Impact, sans-serif;
   --font-mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
 
+  --font-body-size: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
+  --font-body-sm: clamp(0.9375rem, 0.91rem + 0.12vw, 1rem);
+  --font-label: clamp(0.9375rem, 0.91rem + 0.12vw, 1rem);
+  --font-nav: clamp(1rem, 0.97rem + 0.14vw, 1.0625rem);
+  --font-button: clamp(1rem, 0.97rem + 0.14vw, 1.0625rem);
+  --font-card: clamp(0.9375rem, 0.9rem + 0.16vw, 1rem);
+  --font-meta: clamp(0.875rem, 0.85rem + 0.1vw, 0.9375rem);
+  --font-article: clamp(1.0625rem, 1.02rem + 0.18vw, 1.125rem);
+  --font-footer: clamp(0.9rem, 0.88rem + 0.1vw, 0.9375rem);
+
   --container: 1280px;
   --gutter: clamp(18px, 4vw, 48px);
-  --nav-height: 78px;
+  --nav-height: 128px;
   --announcement-height: 38px;
   --header-height: calc(var(--nav-height) + var(--announcement-height));
 
@@ -52,11 +88,10 @@
   --radius-xl: 32px;
   --radius-pill: 999px;
 
-  --shadow-xs: 0 1px 2px rgba(9, 9, 9, 0.05);
-  --shadow-sm: 0 8px 24px rgba(9, 9, 9, 0.06);
-  --shadow-md: 0 22px 60px rgba(9, 9, 9, 0.1);
-  --shadow-lg: 0 40px 100px rgba(9, 9, 9, 0.18);
-  --shadow-red: 0 18px 40px rgba(237, 28, 46, 0.24);
+  --shadow-xs: 0 1px 2px rgba(16, 24, 47, 0.05);
+  --shadow-sm: 0 8px 24px rgba(16, 24, 47, 0.06);
+  --shadow-md: 0 22px 60px rgba(16, 24, 47, 0.1);
+  --shadow-lg: 0 40px 100px rgba(16, 24, 47, 0.18);
 
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
@@ -68,29 +103,56 @@
 }
 
 :root[data-theme='dark'] {
-  --red: #f3273a;
-  --red-strong: #ff4d5d;
-  --red-soft: rgba(243, 39, 58, 0.12);
-  --red-line: rgba(243, 39, 58, 0.34);
+  /* Brand ---------------------------------------------------------------- */
+  --brand: #5f7cff;
+  --brand-strong: #8aa4ff;
+  --brand-bright: #8aa4ff;
+  --brand-bright-strong: #b3c3ff;
+  --brand-soft: rgba(95, 124, 255, 0.16);
+  --brand-line: rgba(95, 124, 255, 0.36);
+  --brand-fill: #3157e8;
+  --brand-fill-strong: #2446d8;
+  --brand-on-dark: #8aa4ff;
+  --brand-on-dark-strong: #b3c3ff;
+  --brand-on-dark-soft: rgba(138, 164, 255, 0.16);
+  --brand-on-dark-line: rgba(138, 164, 255, 0.38);
 
-  --bg: #090909;
-  --bg-deep: #0d0d0d;
-  --surface: #121212;
-  --surface-2: #181818;
-  --surface-3: #202020;
-  --ink: #f8f6f2;
-  --ink-soft: #dedad3;
-  --muted: #a19d96;
-  --muted-strong: #bdb8b0;
-  --line: #2b2b2b;
-  --line-strong: #3a3a3a;
-  --on-dark: #f8f6f2;
-  --on-dark-muted: #9d9891;
-  --dark-line: #303030;
-  --glass: rgba(9, 9, 9, 0.82);
+  --accent: #ffc62b;
+  --accent-strong: #f0b81b;
+  --accent-soft: rgba(255, 198, 43, 0.16);
+  --accent-line: rgba(255, 198, 43, 0.4);
+  --on-accent: #10182f;
+
+  --red: var(--brand);
+  --red-strong: var(--brand-strong);
+  --red-soft: var(--brand-soft);
+  --red-line: var(--brand-line);
+  --shadow-red: 0 18px 40px rgba(49, 87, 232, 0.22);
+
+  --black: #0b1226;
+  --navy: #10182f;
+  --navy-deep: #0b1226;
+  --charcoal: #171d30;
+  --charcoal-2: #242c44;
+
+  --bg: #10182f;
+  --bg-deep: #0b1226;
+  --surface: #171d30;
+  --surface-2: #1d253b;
+  --surface-3: #26304a;
+  --ink: #f6f8ff;
+  --ink-soft: #d6ddec;
+  --muted: #a6b0c6;
+  --muted-strong: #c2cade;
+  --line: #2a334a;
+  --line-strong: #3a4560;
+  --on-dark: #f7f9ff;
+  --on-dark-muted: #a8b2c8;
+  --dark-line: #303950;
+  --glass: rgba(16, 24, 47, 0.84);
   --inset-glow: rgba(255, 255, 255, 0.06);
 
-  --danger: #ff6673;
+  --danger: var(--accent);
   --success: #6bd6a0;
   --success-soft: rgba(107, 214, 160, 0.08);
   --warning: #e2b166;
@@ -99,5 +161,31 @@
   --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.28);
   --shadow-md: 0 22px 60px rgba(0, 0, 0, 0.4);
   --shadow-lg: 0 40px 100px rgba(0, 0, 0, 0.55);
-  --shadow-red: 0 18px 40px rgba(243, 39, 58, 0.18);
+}
+
+/* Dark surfaces keep the brand accents readable while solid fills stay deep. */
+.section--dark,
+.hero,
+.page-hero,
+.booking-hero,
+.results-hero,
+.notices-hero,
+.notices-final,
+.article-hero,
+.success-hero,
+.final-cta,
+.site-footer,
+.mobile-nav,
+.preloader,
+.chatbot-panel,
+.route-card,
+.destination-card,
+.why-card,
+.notice-card--text,
+.article-side-card--dark {
+  --red: var(--brand-on-dark);
+  --red-strong: var(--brand-on-dark-strong);
+  --red-soft: var(--brand-on-dark-soft);
+  --red-line: var(--brand-on-dark-line);
+  --shadow-red: 0 18px 40px rgba(122, 149, 255, 0.18);
 }

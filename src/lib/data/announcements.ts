@@ -16,7 +16,7 @@ export interface Announcement {
 export const ANNOUNCEMENTS: Announcement[] = [
   {
     id: 'editorial-desk',
-    label: 'FlightsFuzz update',
+    label: 'Flash Flights update',
     message: 'Discover the latest travel notices, guides and platform updates.',
     ctaLabel: 'Explore updates',
     href: '/notices',

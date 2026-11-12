@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { Reveal } from './Reveal'
+import { SmartImage } from './SmartImage'
 import { cn } from '../../lib/utils/format'
 
 interface PageHeroProps {
@@ -26,9 +27,14 @@ export function PageHero({ eyebrow, title, description, image, imageAlt, childre
         </Reveal>
         {image && (
           <Reveal className="page-hero__media" delay={90}>
-            <img src={image} alt={imageAlt ?? ''} />
+            <SmartImage
+              key={image}
+              src={image}
+              alt={imageAlt ?? ''}
+              wrapperClassName="page-hero__media-image"
+            />
             <span className="page-hero__media-frame" aria-hidden="true" />
-            <span className="page-hero__media-caption" aria-hidden="true">FLIGHTSFUZZ / TRAVEL DESK</span>
+            <span className="page-hero__media-caption" aria-hidden="true">FLASH FLIGHTS / TRAVEL DESK</span>
           </Reveal>
         )}
       </div>

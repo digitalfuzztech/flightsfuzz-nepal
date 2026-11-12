@@ -16,7 +16,7 @@ export function StepConsent({ consent, errors, onChange }: StepConsentProps) {
         <div>
           <strong>Two channels. Two separate choices.</strong>
           <p>
-            FlightsFuzz needs permission to contact you about this request. Both consents are
+            Flash Flights needs permission to contact you about this request. Both consents are
             required for this initial workflow, but they remain separate records. Neither box is
             preselected.
           </p>
@@ -30,7 +30,7 @@ export function StepConsent({ consent, errors, onChange }: StepConsentProps) {
             <span className="consent-card__channel">Email communication consent</span>
             <span className="consent-card__text">
               I agree to receive booking-related updates, quotations, confirmations, and other
-              communication from FlightsFuzz through the email address provided.
+              communication from Flash Flights through the email address provided.
             </span>
             <span className="consent-card__links">
               Read the <Link to="/privacy-policy" target="_blank">Privacy Policy</Link> and{' '}
@@ -53,7 +53,7 @@ export function StepConsent({ consent, errors, onChange }: StepConsentProps) {
           <span className="consent-card__body">
             <span className="consent-card__channel">WhatsApp communication consent</span>
             <span className="consent-card__text">
-              I agree to receive booking-related messages and updates from FlightsFuzz through
+              I agree to receive booking-related messages and updates from Flash Flights through
               WhatsApp on the number provided.
             </span>
             <span className="consent-card__links">
